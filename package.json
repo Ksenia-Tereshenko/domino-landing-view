@@ -1,0 +1,29 @@
+{
+  "name": "itp-it",
+  "version": "1.0.0",
+  "description": "ITP official site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "tereschenko_ks",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.2.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify-es": "^3.0.0"
+  },
+  "dependencies": {
+    "gulp-plumber": "^1.2.1",
+    "gulp-watch": "^5.0.1",
+    "npm-sass": "^3.0.0"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  }
+}
