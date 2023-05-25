@@ -407,6 +407,20 @@ footer {
   padding: $s42px $s60px;
   position: relative;
   overflow: hidden;
+
+  &:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../images/footer_dots.svg');
+    pointer-events: none;
+    background-position: 18px 18px;
+    opacity: .3;
+  }
 }
 
 .footer {
@@ -416,6 +430,7 @@ footer {
     top: 0;
     left: 0;
     transform: translate(-50%, -50%);
+    pointer-events: none;
   }
 
   &__right-ellips {
@@ -423,6 +438,7 @@ footer {
     bottom: 0;
     right: 0;
     transform: translate(57%,60%);
+    pointer-events: none;
   }
 
   &__line {
