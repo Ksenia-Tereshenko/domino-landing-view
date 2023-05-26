@@ -212,6 +212,10 @@ main {
   position: relative;
 }
 
+h1 {
+  text-align: center;
+}
+
 h1, h2.home-section__title {
   font-size: $s40px;
   line-height: $s54px;
@@ -288,6 +292,7 @@ p {
      color: $colorPurple;     
      font-weight: 500;
      transition-property: background-color;
+     text-decoration: none;
 
      &_black {
       border-color: $colorBlack; 
@@ -419,7 +424,8 @@ footer {
     background-image: url('../images/footer_dots.svg');
     pointer-events: none;
     background-position: 18px 18px;
-    opacity: .3;
+    mix-blend-mode: color-burn;
+    z-index: 2;
   }
 }
 

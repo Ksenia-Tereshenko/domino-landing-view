@@ -65,6 +65,7 @@
   line-height: $s60px;
   margin: 0 0 $s16px;
   font-weight: 400;
+  text-align: left;
 
   span {
     color: $colorPurple;
@@ -548,8 +549,8 @@
 
     &_item {
       background: #FFFFFF;
-      border: 1px dashed  #C0E8FF;
-      padding: $s24px $s24px $s24px $s16px;
+      border: 2px dashed  #C0E8FF;
+      padding: $s22px $s22px $s22px $s14px;
       display: flex;
       gap: $s8px;
       align-items: center;
@@ -618,7 +619,7 @@
     &_img {
       height: $s136px;
       width: $s190px;
-      border-radius: $s8px;
+      border-radius: $s16px;
       object-fit: contain;
       flex-shrink: 0;
     }
@@ -646,9 +647,10 @@
     }
   }
 
-  &__button {
-    margin: $s54px auto 0;
-    display: block;
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: $s54px;
   }
 }
 
