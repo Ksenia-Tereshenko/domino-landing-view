@@ -20,8 +20,132 @@
 
 @@include('_header.html')
 <main>  
-  <div class="blog-page">
-    <h1> Итоги спринта 14 </h1>    
+  <div class="blog-page-detail">
+    <div>
+      <a class="link link__arrow" href="blog.html">Назад</a>
+    </div> 
+    <div class="blog-page-detail__content">
+      <img class="detail-content__img" src="images/blog-detail-main-pic.svg">
+      <div class="detail-content">        
+        <p class="detail-content__date">10/04/2023</p>
+        <h1> Итоги спринта 14 </h1>
+        <h3>Как задавать запрос для генерации картинок:</h3>
+        <p>Генерацию картинок разберём на примере популярного сервиса Midjourney — у него больше возможностей. О других похожих площадках мы рассказывали в статье о том, что будет с нейросетями и контентом в будущем.</p>
+        <p>Вот краткий список правил общения, который предложили создатели Midjourney:</p>
+        <ul>
+          <li>Прописывать максимально точный и понятный запрос. Избегать абстракций. Если хотите сгенерировать конкретное место, лучше писать его название вместо «известная статуя в Нью-Йорке».</li>
+          <li>Не использовать частицы «не», «кроме», «без» и похожие. Например, вместо «человек не радуется» писать «человек грустит».</li>
+          <li>Разбивать сложные запросы на части с помощью запятых или двойных двоеточий «: :». Например, так отделяют запрос объекта от стилистики и команд для ИИ.</li>
+          <li>Запрашивать одиночные объекты или указывать конкретные числа.</li>
+        </ul>
+        <br>
+        <br>
+        <img src="images/blog-detail-content-pic-01.svg">
+        <br>
+        <br>
+        <h3>1. Задаём объект:</h3>
+        <p>Начинаем с того, что мы хотим увидеть на будущей картинке. Например, собаку, письмо, самолёт или магов. У нейросети найдутся варианты изображений на любой вкус, потому что они обучаются на огромной базе из интернета.</p>
+        <p class="text-bg">
+          Если вы хотите задать несколько объектов, разделяйте их двумя двоеточиями «::». Так нейросеть не запутается и точно нарисует то, что вы хотите.
+        </p>
+        <p>
+          Начинаем с того, что мы хотим увидеть на будущей картинке. Например, собаку, письмо, самолёт или магов. У нейросети найдутся варианты изображений на любой вкус, потому что они обучаются на огромной базе из интернета.
+        </p>
+        <br>
+        <img src="images/blog-detail-content-pic-02.svg">
+        <p class="text-small">10 марта 2023г </p>
+        <br>
+        <p>Уникальность и разнообразие итоговых картинок получится в том случае, если совместить несколько объектов на одном фото. Например, кот-супергерой или человек-биткоин.</p>
+        <br>
+        <div class="img__grid img__grid_2">
+          <div>
+            <img src="images/blog-detail-content-pic-04.svg">
+            <p class="text-small">Можно написать название вместо даты</p>
+          </div>
+          <div>
+            <img src="images/blog-detail-content-pic-03.svg">
+            <p class="text-small">Можно написать название вместо даты</p>
+          </div>
+        </div>
+        <br>
+        <p>Кроме того, объекты можно олицетворять или задавать им текстуру. Например, создадим Машу и Медведя, если бы они были президентами США.</p>
+        <h3>Формат итоговой картинки:</h3>
+        <p>Можно попросить нейросеть, чтобы готовое изображение было в виде картины, арта, фотографии, скульптуры и т.д.</p>
+        <h3>Разные параметры камеры и объектива. </h3>
+        <p>С помощью специальных команд можно задать параметры камеры или объектива. Это повлияет на итоговое изображение. Например, можно получить реалистичную фотографию, если попросить нейросеть сгенерировать фотографию, снятую на объектив 9 мм. А можно добавить эффект fish eye.</p>
+        <p>Например, можно получить реалистичную фотографию, если попросить нейросеть сгенерировать фотографию, снятую на объектив 9 мм. А можно добавить эффект fish eye.</p>
+      </div>
+    </div>  
+    <div class="recomended-news">
+      <h2 class="home-section__title home-section__title_center">Вам понравятся эти новости</h2>
+      <div class="recomended-news__block">
+        <div class="our-plans__now_item-block">
+          <div class="our-plans__now_date">
+            31 марта
+          </div>
+          <div class="our-plans__now_item">
+            <img class="our-plans__now_img" src="images/home-plans-03.svg">
+            <div class="our-plans__now_text-block">
+              <div>
+                <p class="our-plans__now_title">
+                  Итоги спринта 14
+                </p>
+                <p class="our-plans__now_text">
+                  В данном разделе вы можете наблюдать развитие нашего продукта шаг за шагом, 
+                  от первого до В данном разделе вы можете наблюдать развитие нашего продукта шаг за шагом, 
+                  от первого до...
+                </p>
+              </div>
+              <a class="link link__arrow" href="blog-detail.html">
+                Читать полностью 
+                <span class="link__arrow_wrp" style="position: relative;">
+                  <svg class="link__arrow_line" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7.125L15 7.125" stroke="currentColor" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="link__arrow_arrow" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7.125L15 7.125" stroke="currentColor" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.875 13.25L15 7.125L8.875 1" stroke="currentColor" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="our-plans__now_item-block">
+          <div class="our-plans__now_date">
+            26 марта
+          </div>
+          <div class="our-plans__now_item">
+            <img class="our-plans__now_img" src="images/home-plans-02.svg">
+            <div class="our-plans__now_text-block">
+              <div>
+                <p class="our-plans__now_title">
+                  Горячие новинки в мире технологий
+                </p>
+                <p class="our-plans__now_text">
+                  В данном разделе вы можете наблюдать развитие нашего продукта шаг за шагом, 
+                  от первого до В данном разделе вы можете наблюдать развитие нашего продукта шаг за шагом, 
+                  от первого до...
+                </p>
+              </div>
+              <a class="link link__arrow" href="blog-detail.html">
+                Читать полностью 
+                <span class="link__arrow_wrp" style="position: relative;">
+                  <svg class="link__arrow_line" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7.125L15 7.125" stroke="currentColor" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="link__arrow_arrow" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7.125L15 7.125" stroke="currentColor" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.875 13.25L15 7.125L8.875 1" stroke="currentColor" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <button class="blog-page__button button button__solid">Читать все</button>
+      </div>
+    </div> 
   </div>    
 </main>
   @@include('_footer.html')
