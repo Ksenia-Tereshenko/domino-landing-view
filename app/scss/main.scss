@@ -79,6 +79,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 3;
+  background: rgba(249, 251, 255, 0.4);
 }
 
 .header{
@@ -203,6 +204,10 @@ header {
     display: flex;
     align-items: center;
     gap: $s24px;
+
+    .button {
+      background: rgba(255,255,255,.6);
+    }
   }
 }
 
@@ -303,6 +308,7 @@ p {
   transition: ease-in-out .2s;
   font-size: $s14px;
   text-decoration: none;
+  font-weight: 500;
 
   &__outline {
      min-width: $s136px;
@@ -390,7 +396,7 @@ p {
   font-size: 0;
   transition: ease-out .3s;
   cursor: pointer;
-  margin: $s48px $s60px;
+  margin: $s45px $s60px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -455,6 +461,9 @@ footer {
     left: 0;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    width: $s1072px;
+    height: $s1072px;
+    opacity: .8;
   }
 
   &__right-ellips {
@@ -463,6 +472,9 @@ footer {
     right: 0;
     transform: translate(57%,60%);
     pointer-events: none;
+    width: $s1072px;
+    height: $s1072px;
+    opacity: .9;
   }
 
   &__line {

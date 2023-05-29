@@ -124,6 +124,7 @@
 
   &__first {
     align-items: center;
+    padding-top: $s80px;
 
     &__button {
       margin-top: $s32px;
@@ -445,6 +446,7 @@
     &_text {
       text-align: center;
       padding: 0 $s8px;
+      margin: $s32px 0 0;
     }
   }
 
@@ -524,6 +526,7 @@
     line-height: $s17px; 
     text-transform: uppercase;
     font-weight: 600;
+    letter-spacing: 0.04em;
   }
 
   &__right {
@@ -538,7 +541,7 @@
       height: 120%;
       top: 50%;
       left: 0;
-      transform: translate(-$s40px, -50%);
+      transform: translate(-$s40px, -54%);
     }
   }
 
@@ -650,7 +653,7 @@
   &__buttons {
     display: flex;
     justify-content: center;
-    margin-top: $s54px;
+    margin-top: $s48px;
   }
 }
 
