@@ -263,6 +263,22 @@ p {
       right: 0;
       transform: translateY(-50%);
     }
+
+    &_back{
+      color: $colorBlack;
+
+      &:hover {
+        color: $colorBlack !important;
+
+        .link__arrow_arrow {
+          transform: translateX(-20%) !important;
+        }
+      }
+
+      &:active {
+        color: $colorPurpleDark !important;
+      }
+    } 
   }
 
   &:hover {

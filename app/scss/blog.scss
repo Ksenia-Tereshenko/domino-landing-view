@@ -122,10 +122,31 @@
   grid-template-columns: 1fr $s874px 1fr;
   gap: $s24px;
   padding-top: $s24px;
+  position: relative;
 
   &__content {
     background: #FFFFFF;
-    border-radius: $s32px;    
+    border-radius: $s32px;   
+    position: relative;
+    z-index: 2; 
+  }
+
+  &__ellipse_blue {
+    position: absolute;
+    top: -8%;
+    right: -25%;
+    width: $s1072px;
+    height: $s1072px;
+    pointer-events: none;
+  }
+
+  &__ellipse_purple {
+    position: absolute;
+    top: -1%;
+    right: -42%;
+    width: $s1072px;
+    height: $s1072px;
+    pointer-events: none;
   }
 }
 
