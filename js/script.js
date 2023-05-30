@@ -45,3 +45,38 @@ $(document).ready(function () {
     }
   });
 });
+
+let scrollToBtn = $(".js-btn-scroll");
+
+scrollToBtn.click(function(e) {
+
+      let $this = $(this),
+          sectionScroll = $this.attr('data-scroll'),
+          sectionTo = $(sectionScroll),
+          startScroll,
+          scrollTop;
+
+      e.preventDefault();
+
+      if (!startScroll) {
+
+          startScroll = true;
+
+          
+
+              scrollTop = sectionTo.offset().top;              
+
+              $('html, body').animate({
+                  scrollTop: scrollTop
+              }, 800);
+
+    
+
+          setTimeout(function () {
+              startScroll = false;
+          }, 1000);
+
+          return false;
+      }
+
+  });

@@ -1,7 +1,7 @@
 @import "partials/variables";
 
 .partnership-page {
-  padding: $s48px 0 $s110px;
+  padding: $s48px 0 $s42px;
   position: relative;
 
   h1 {
@@ -160,6 +160,10 @@
   background-size: contain;
   position: relative;
   overflow: hidden;
+
+  &__wrp {
+    padding-top: $s67px;
+  }
 
   &__form {
     max-width: $s470px;

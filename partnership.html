@@ -55,7 +55,7 @@
       <div class="partnership-top__text-block">
         <h1> Предлагаем сотрудничество </h1>
         <p class="partnership-top__subtitle">Если вы представляете малый или средний бизнес и ищите решения для чат-бота, адаптированные к&nbsp;вашим процессам и экосистеме, мы будем рады вас услышать.</p>
-        <button class="partnership-top__button button button__solid" onclick="document.location='partnership.html#partner-form'">
+        <button class="partnership-top__button button button__solid js-btn-scroll" data-scroll="#partner-form">
           Стать партнером
         </button>
       </div>
@@ -104,29 +104,31 @@
     </div>
        
   </div>    
-  <div class="partnership-form" id="partner-form">
-    <div class="partnership-form__ellipse-blue"></div>
-    <div class="partnership-form__ellipse-purple"></div>
-    <div class="partnership-form__form">
-      <h2 class="home-section__title">Свяжитесь с нами</h2>
-      <form action="">
-        <label>
-          <p>Как к вам обращаться</p>
-          <input type="text" placeholder="Ваше имя">
-        </label>
-        <label class="error">
-          <p>Как с вами связаться</p>
-          <input type="text" placeholder="Телефон или email">
-          <p class="error-text">Пожалуйста, введите телефон или email</p>
-        </label>
-        <label>
-          <p>Ваш вопрос</p>
-          <input type="text" placeholder="Напишите вопрос">
-        </label>
-        <button class="button button__solid button__solid_mob button__form" onclick="document.location='partnership.html#partner-form'">
-          Отправить
-        </button>
-      </form>
+  <div class="partnership-form__wrp" id="partner-form">
+    <div class="partnership-form">
+      <div class="partnership-form__ellipse-blue"></div>
+      <div class="partnership-form__ellipse-purple"></div>
+      <div class="partnership-form__form">
+        <h2 class="home-section__title">Свяжитесь с нами</h2>
+        <form action="">
+          <label>
+            <p>Как к вам обращаться</p>
+            <input type="text" placeholder="Ваше имя">
+          </label>
+          <label class="error">
+            <p>Как с вами связаться</p>
+            <input type="text" placeholder="Телефон или email">
+            <p class="error-text">Пожалуйста, введите телефон или email</p>
+          </label>
+          <label>
+            <p>Ваш вопрос</p>
+            <input type="text" placeholder="Напишите вопрос">
+          </label>
+          <button class="button button__solid button__solid_mob button__form" onclick="document.location='partnership.html#partner-form'">
+            Отправить
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 </main>
