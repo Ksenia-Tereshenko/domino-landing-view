@@ -1,0 +1,216 @@
+@import "partials/variables";
+
+.partnership-page {
+  padding: $s48px 0 $s110px;
+  position: relative;
+
+  h1 {
+    text-align: left;
+    margin-bottom: $s24px;
+  } 
+
+  &__ellipse-blue {
+    position: absolute;
+    width: $s372px;
+    height: $s372px;
+    right: -$s110px;
+    top: $s570px;
+    background: #C1E8FF;
+    filter: blur($s200px);
+  }
+
+  &__ellipse-purple  {
+    position: absolute;
+    width: $s372px;
+    height: $s372px;
+    left: -$s200px;
+    top: $s874px;
+    background: #ADABFF;
+    filter: blur($s200px);
+  }
+}
+
+.partnership-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $s100px;
+  max-width: $s1208px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+
+  &__text-block {
+    max-width: $s436px;
+    margin-right: $s90px;
+  }
+
+  &__img {
+    width: $s570px;
+    height: auto;
+  }
+
+  &__subtitle {
+    margin: 0 0 $s32px;
+    position: relative;
+    z-index: 2;
+  } 
+}
+
+.partnership-content {
+  max-width: $s874px;
+  margin: $s80px auto 0;
+  position: relative;
+  z-index: 2;
+
+  &__bg {
+    background: #FFFFFF;
+    border: 1px solid $colorGreyLight;
+    border-radius: $s32px;
+    padding: $s16px $s18px $s24px;
+
+    &_big {
+      padding: $s32px $s40px;
+    }
+  }
+
+  &__column {
+    display: flex;
+    justify-content: space-between;
+    gap: $s20px;
+    margin-top: $s40px;
+
+    .partnership-content__bg {
+      width: 25%;
+    }
+  }
+
+  &__text-bold {
+    font-size: $s14px;
+    line-height: $s17px;
+    margin-bottom: 0;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__icon {
+    width: $s80px;
+    height: $s80px;
+    margin: 0 auto $s16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text-center {
+    max-width: $s650px;
+    margin: $s50px auto 0 ;
+  }
+
+  &__text-quotes {
+    text-align: center;
+    font-size: $s32px;
+    line-height: $s45px;
+    padding: $s75px 0;
+    position: relative;
+    background-image: url('../images/partnership-bg-quotes.svg');
+    background-size: $s200px $s200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: $s48px 0 0;
+
+    &::before {
+      content: " ";
+      background-image: url('../images/partnership-quotes.svg');
+      width: $s50px;
+      height: $s40px;
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: rotate(180deg);
+    }
+
+    &::after {
+      content: " ";
+      background-image: url('../images/partnership-quotes.svg');
+      width: $s50px;
+      height: $s40px;
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.partnership-form {
+  background-color: $colorPurple;
+  background-image: url('../images/form-purple-bg.svg');
+  padding: $s48px $s60px;
+  color: #FFFFFF;
+  margin-bottom: -$s20px;
+  margin-left: -$s60px;
+  margin-right: -$s60px;
+  background-position: center center;
+  background-size: contain;
+  position: relative;
+  overflow: hidden;
+
+  &__form {
+    max-width: $s470px;
+    margin: 0 auto;
+
+    h2 {
+      text-align: center;
+      margin-bottom: $s48px;
+    }
+
+    input {
+      border-color: #FFFFFF;
+      background: none;    
+      color: #FFFFFF;  
+      
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    ::placeholder { 
+      color: rgba(255, 255, 255, .5);
+      font-size: $s16px;
+      line-height: $s18px;
+      font-family: 'ProximaNova';      
+    }
+  }
+
+  &__ellipse-blue {
+    position: absolute;
+    width: $s372px;
+    height: $s372px;
+    left: -$s80px;
+    top: -$s111px;
+    background: #B3FEFE;
+    filter: blur($s200px);
+    pointer-events: none;
+  }
+
+  &__ellipse-purple {
+    position: absolute;
+    width: $s372px;
+    height: $s372px;
+    left: $s1096px;
+    top: $s280px;
+    background: #930BFF;
+    filter: blur($s200px);
+    pointer-events: none;
+  }
+}

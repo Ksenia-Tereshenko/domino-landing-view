@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=10;IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="address=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>DOMINO - Партнерам</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/partnership.css">
+
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+@@include('_header.html')
+<main>  
+  <div class="partnership-page">
+    <div class="partnership-page__ellipse-blue"></div>
+    <div class="partnership-page__ellipse-purple"></div>
+    <div class="partnership-top">
+      <div>
+        <img class="partnership-top__img" src="images/partnership_img.svg">
+      </div>
+      <div class="partnership-top__text-block">
+        <h1> Предлагаем сотрудничество </h1>
+        <p class="partnership-top__subtitle">Если вы представляете малый или средний бизнес и ищите решения для чат-бота, адаптированные к&nbsp;вашим процессам и экосистеме, мы будем рады вас услышать.</p>
+        <button class="partnership-top__button button button__solid" onclick="document.location='partnership.html#partner-form'">
+          Стать партнером
+        </button>
+      </div>
+    </div>
+    <div class="partnership-content">
+      <div class="partnership-content__bg partnership-content__bg_big">
+        Наша команда экспертов готова обсудить пожелания и предложить возможные варианты сотрудничества, наилучшим образом соответствующие вашим потребностям. 
+        <br>Мы верим, что вместе сможем создать решение, которое позволит вашему бизнесу достичь поставленных целей.
+      </div>
+      <div class="partnership-content__column">
+        <div class="partnership-content__bg">
+          <div class="partnership-content__icon">
+            <img src="images/partnership-01.svg">
+          </div>
+          <p class="partnership-content__text-bold">Уникальные решения</p>          
+        </div>
+        <div class="partnership-content__bg">
+          <div class="partnership-content__icon">
+            <img src="images/partnership-02.svg">
+          </div>
+          <p class="partnership-content__text-bold">Низкая стоимость</p>          
+        </div>
+        <div class="partnership-content__bg">
+          <div class="partnership-content__icon">
+            <img src="images/partnership-03.svg">
+          </div>
+          <p class="partnership-content__text-bold">Гибкие интеграции</p>          
+        </div>
+        <div class="partnership-content__bg">
+          <div class="partnership-content__icon">
+            <img src="images/partnership-04.svg">
+          </div>
+          <p class="partnership-content__text-bold">Индивидуальный&nbsp;подход</p>          
+        </div>
+      </div>
+      <p class="partnership-content__text-center">
+        Некоторым предприятиям могут потребоваться индивидуальные или даже уникальные решения для удовлетворения их конкретных потребностей. Благодаря грамотному проектированию платформы, сегодня мы имеем низкую стоимость внесения изменений в платформу и гибкие интеграции.
+      </p>
+      <p class="partnership-content__text-quotes">
+        Вместе мы сможем создать решение, позволяющее вашему бизнесу достичь поставленных целей
+      </p>
+      <p class="partnership-content__text-center">
+        Как разработчики платформы конструктора чат-ботов, мы понимаем уникальность каждого клиента, его бизнеса и вызовов, с которыми приходится сталкиваться. <br>
+        Поэтому мы разработали платформу и CRM, которые универсально подходят для общего использования независимо от индустрии, не забыв при этом про кастомизацию.
+      </p>      
+    </div>
+       
+  </div>    
+  <div class="partnership-form" id="partner-form">
+    <div class="partnership-form__ellipse-blue"></div>
+    <div class="partnership-form__ellipse-purple"></div>
+    <div class="partnership-form__form">
+      <h2 class="home-section__title">Свяжитесь с нами</h2>
+      <form action="">
+        <label>
+          <p>Как к вам обращаться</p>
+          <input type="text" placeholder="Ваше имя">
+        </label>
+        <label class="error">
+          <p>Как с вами связаться</p>
+          <input type="text" placeholder="Телефон или email">
+          <p class="error-text">Пожалуйста, введите телефон или email</p>
+        </label>
+        <label>
+          <p>Ваш вопрос</p>
+          <input type="text" placeholder="Напишите вопрос">
+        </label>
+        <button class="button button__solid button__solid_mob button__form" onclick="document.location='partnership.html#partner-form'">
+          Отправить
+        </button>
+      </form>
+    </div>
+  </div>
+</main>
+  @@include('_footer.html')
+</body>
+<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/blog.js"></script>
+</html>

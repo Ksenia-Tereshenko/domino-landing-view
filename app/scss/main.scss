@@ -360,6 +360,26 @@ p {
       background: $colorPurpleDark;
       border-color: $colorPurpleDark;
     }
+
+    &_mob {
+
+      &:hover {
+        background: #FFFFFF;
+        border-color: #FFFFFF;
+        color: $colorPurple;
+      }
+
+      &:active {
+        background: $colorBlueLight;
+        border-color: #FFFFFF;
+        color: $colorPurple;
+      }
+    }
+  }
+
+  &__form {
+    margin: $s48px auto 0;
+    display: block;
   }
 }
 
@@ -427,6 +447,56 @@ p {
     background: $colorBlueLight;
   }
 
+}
+
+label {
+  display: block;
+  position: relative;
+
+  &:not(:first-child) {
+    margin-top: $s24px;
+  }
+  
+  p {
+    font-size: $s16px;
+    line-height: $s18px;
+    font-weight: 500;
+    margin-bottom: $s8px;
+  }
+
+  input {
+    display: block;
+    height: $s48px;
+    width: 100%;
+    border-radius: $s12px;
+    outline: none;
+    border: 1px solid $colorBlack;
+    padding: 0 $s24px;
+    font-family: 'ProximaNova';
+    font-size: $s16px;
+    line-height: $s18px;
+    font-weight: 400;
+    transition: ease-out .3s;
+  }
+
+  &.error {
+
+    input {
+      border-color: #FB7080;
+    }
+  }
+
+  .error-text {
+    color: #FB7080;
+    font-size: $s12px;
+    line-height: 1;
+    position: absolute;
+    left: $s24px;
+    bottom: -$s2px;
+    transform: translateY(100%);
+    margin: 0;
+    font-weight: 400;
+  }
 }
 
 footer {
