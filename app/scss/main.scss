@@ -252,6 +252,10 @@ p {
     position: relative;
     line-height: 1;
 
+    &:hover {
+      color: $colorPurple !important;
+    }
+
     &_wrp {
       position: relative;
       display: flex;
@@ -533,7 +537,7 @@ footer {
     pointer-events: none;
     width: $s1072px;
     height: $s1072px;
-    opacity: .8;
+    opacity: .7;
   }
 
   &__right-ellips {
