@@ -174,8 +174,8 @@
       margin-bottom: $s48px;
     }
 
-    input {
-      border-color: #FFFFFF;
+    input, textarea {
+      border-color: #FFFFFF !important;
       background: none;    
       color: #FFFFFF;  
       
@@ -185,6 +185,22 @@
 
       &:focus {
         background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    .button__form {
+      margin-top: $s48px;
+
+      &:hover {
+        background: #FFFFFF;
+        border-color: #FFFFFF;
+        color: $colorPurple;
+      }
+
+      &:active {
+        background: $colorBlueLight;
+        border-color: #FFFFFF;
+        color: $colorPurple;
       }
     }
 
