@@ -24,19 +24,14 @@ $(document).ready(function () {
   let openFaqFormBtn = $(".js-open-faq-form"),
       overlay = $(".overlay"),
       formFaq = $(".popup-form"),
-      iconClose = $(".popup-form__close-icon");
+      closeForm = $(".js-close-form");
 
   openFaqFormBtn.click(function() {
     overlay.addClass("overlay_show");
     formFaq.addClass("popup-form_show");
   });
 
-  overlay.click(function() {
-    overlay.removeClass("overlay_show");
-    formFaq.removeClass("popup-form_show");
-  });
-
-  iconClose.click(function() {
+  closeForm.click(function() {
     overlay.removeClass("overlay_show");
     formFaq.removeClass("popup-form_show");
   });

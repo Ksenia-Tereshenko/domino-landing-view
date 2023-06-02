@@ -2,6 +2,8 @@
 
 .faq-page {
   margin-top: $s48px;
+  position: relative;
+  z-index: 2;
 
   h1 {
     text-align: left;
@@ -79,7 +81,40 @@
       margin-top: $s30px;
     }
   }
+
+  &__ellipses-block {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+  }
   
+  &__blue-ellipse {
+    position: absolute;
+    pointer-events: none;
+    width: $s372px;
+    height: $s372px;
+    left: $s350px;
+    top: $s372px;    
+    background: #C1E8FF;
+    filter: blur($s200px);
+    opacity: .4;
+  }
+
+  &__purple-ellipse {
+    position: absolute;
+    pointer-events: none;
+    width: $s372px;
+    height: $s372px;
+    left: $s80px;
+    top: $s800px;    
+    background: #C1E8FF;
+    filter: blur($s200px);
+    opacity: .7;
+  }
 }
 
 .faq-block {
