@@ -17,6 +17,7 @@
     top: $s570px;
     background: #C1E8FF;
     filter: blur($s200px);
+    opacity: .4;
   }
 
   &__ellipse-purple  {
@@ -27,6 +28,7 @@
     top: $s874px;
     background: #ADABFF;
     filter: blur($s200px);
+    opacity: .4;
   }
 }
 
@@ -221,6 +223,7 @@
     background: #B3FEFE;
     filter: blur($s200px);
     pointer-events: none;
+    opacity: .7;
   }
 
   &__ellipse-purple {
@@ -232,5 +235,6 @@
     background: #930BFF;
     filter: blur($s200px);
     pointer-events: none;
+    opacity: .4;
   }
 }

@@ -1,0 +1,129 @@
+@import "partials/variables";
+
+.contact-page {
+  padding: $s32px $s111px $s80px;
+  position: relative;
+
+  &__purple-ellipse {
+    position: absolute;
+    width: $s190px;
+    height: $s190px;
+    right: $s36px;
+    top: $s56px;
+    background: rgba(173, 171, 255, 0.6);
+    filter: blur($s100px);
+    opacity: .8;
+  }
+
+  &__blue-ellipse {
+    position: absolute;
+    width: $s190px;
+    height: $s190px;
+    right: $s390px;
+    top: $s540px;
+    background: #C1E8FF;
+    filter: blur($s100px);
+    opacity: .8;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $s131px;
+    margin-top: $s32px;
+  }
+
+  &__left {
+    width: $s540px;
+  }
+
+  &__right {
+    width: $s420px;
+    background: #FFFFFF;
+    border-radius: $s32px;
+    border: 1px solid $colorGreyLight;
+    padding: $s30px;
+
+    .contact-page__subtitle {
+      margin-bottom: $s16px;      
+    }
+
+    input, textarea {
+      border-color: #FFFFFF;
+    }
+
+    .button__form {
+      margin-top: $s32px;
+    }
+  }
+
+  &__subtitle {
+    font-size: $s24px;
+    line-height: $s32px;
+    margin-bottom: $s42px;
+    margin-top: 0;
+    font-weight: 400;
+    max-width: $s480px;
+  }
+
+  &__text {
+    font-size: $s14px;
+    line-height: $s17px;
+    margin-bottom: $s42px;
+  }
+
+  &__contact-block {
+    border-top: 1px solid $colorGreyLight;
+    padding-top: $s32px;
+  }
+
+  &__contact_item {
+    display: flex;
+    align-items: center;
+    font-size: $s14px;
+
+    &:not(:first-child) {
+      margin-top: $s16px;
+    }
+
+    &_icon {
+      width: $s24px;
+      height: $s24px;
+      margin-right: $s12px;
+    }
+  }
+
+  &__social {
+    margin-top: $s42px;
+    display: flex;
+    align-items: center;
+    gap: $s32px;
+
+    &_item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        border-color: $colorPurple;
+
+        .contact-page__social_icon {
+          transform: translateY(-0.28vw) translateX(0.15vw);
+        }
+      }
+
+      &:active {
+        border-color: $colorBlack;
+      }
+    }
+
+    &_icon {
+      width: $s16px;
+      height: $s16px;
+      margin-left: $s8px;
+      transform: translateY(-0.15vw);
+      transition: ease-out.3s;      
+    }
+  }
+}

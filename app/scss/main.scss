@@ -428,22 +428,17 @@ p {
   position: absolute;
   bottom: 0;
   right: 0;
+  color: white;
 
-  &:before {
-    content: " ";
-    background-image: url('../images/icons/slider-arrow-white.svg');
+  svg {
     width: $s24px;
     height: $s24px;
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    transform: rotate(90deg);
   }
 
   &:hover {
     border-color: $colorBlack;
     background: #FFFFFF;
+    color: $colorBlack;
 
     &::before {
       background-image: url('../images/icons/slider-arrow.svg');
