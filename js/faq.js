@@ -108,9 +108,6 @@ $(window).scroll(function() {
       offsetTop3 = $elementCase3.offset().top + $elementCase3.outerHeight()/0.9,
       offsetTop4 = $elementCase4.offset().top + $elementCase4.outerHeight()/1.5;
 
-      console.log(offsetTop4);
-      console.log(scroll);
-
   if (scroll > 1 && scroll < offsetTop2) {
 
       if (!$menuItem1.hasClass(navRightActive)) {

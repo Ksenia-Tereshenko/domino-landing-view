@@ -13,6 +13,9 @@
     background: rgba(173, 171, 255, 0.6);
     filter: blur($s100px);
     opacity: .8;
+    @-moz-document url-prefix() {
+      opacity: .6
+    }
   }
 
   &__blue-ellipse {
@@ -24,6 +27,9 @@
     background: #C1E8FF;
     filter: blur($s100px);
     opacity: .8;
+    @-moz-document url-prefix() {
+      opacity: .6
+    }
   }
 
   &__content {

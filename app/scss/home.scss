@@ -15,7 +15,7 @@
   &__item {
     display: flex;
     align-items: center;
-    gap: $s16px;
+    gap: $s4px;
     text-decoration: none;
     color: $colorBlack;
     font-size: $s14px;
@@ -46,6 +46,11 @@
     transition: ease-in-out .3s;
     opacity: 0;
     transform: translateX(10px);
+    padding: $s4px $s20px $s4px $s8px;
+    border-radius: $s8px;
+    background: rgba(249, 251, 255, 0.2);
+    backdrop-filter: blur(4px);
+    font-size: $s14px;
   }
 
   &__line {
@@ -451,19 +456,27 @@
   }
 
   &_ellips-purple {
+    width: $s372px;
+    height: $s372px;
+    background: #ADABFF;
     position: absolute;
-    top: -30%;
-    left: 0;
-    width: $s1172px;
+    top: 35%;
+    left: 20%;
     pointer-events: none;
+    filter: blur($s200px);
+    opacity: .5;
   }
 
   &_ellips-blue {
+    width: $s372px;
+    height: $s372px;
+    background: #C1E8FF;
     position: absolute;
-    top: -18%;
-    right: 0;
-    width: $s1172px;
+    top: 38%;
+    right: 23%;
     pointer-events: none;
+    filter: blur($s200px);
+    opacity: .5;
   }
 
   &__button {
@@ -703,19 +716,33 @@
     }
 
     &_ellipse-purple {
+      width: $s372px;
+      height: $s372px;
+      background: rgba(147, 11, 255, 1);
+      opacity: .6;
+      @-moz-document url-prefix() {
+        opacity: .25;
+      }      
       position: absolute;
-      bottom: 0;
-      right: 0;
-      width: $s800px;
+      bottom: -$s90px;
+      right: $s30px;
       pointer-events: none;
+      filter: blur($s200px);      
     }
 
     &_ellipse-blue {
+      width: $s372px;
+      height: $s372px;
+      background: #B3FEFE;
+      opacity: .6;
+      @-moz-document url-prefix() {
+        opacity: .25;
+      }      
       position: absolute;
-      top: 0;
-      right: 0;
-      width: $s1030px;
+      top: -$s90px;
+      right: $s253px;
       pointer-events: none;
+      filter: blur($s200px);    
     }
   }
 }

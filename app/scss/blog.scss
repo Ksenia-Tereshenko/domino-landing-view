@@ -70,6 +70,10 @@
     top: -21%;
     left: -10%;
     pointer-events: none;
+    opacity: .8;
+    @-moz-document url-prefix() {
+      opacity: .5;
+    }
   }
 
   &__ellipse_purple {
@@ -79,6 +83,10 @@
     top: 16%;
     left: -18%;
     pointer-events: none;
+    opacity: .8;
+    @-moz-document url-prefix() {
+      opacity: .35;
+    }
   }
 }
 
@@ -150,6 +158,10 @@
     width: $s1072px;
     height: $s1072px;
     pointer-events: none;
+    opacity: .8;
+    @-moz-document url-prefix() {
+      opacity: .5;
+    }
   }
 
   &__ellipse_purple {
@@ -159,6 +171,10 @@
     width: $s1072px;
     height: $s1072px;
     pointer-events: none;
+    opacity: .8;
+    @-moz-document url-prefix() {
+      opacity: .35;
+    }
   }
 }
 

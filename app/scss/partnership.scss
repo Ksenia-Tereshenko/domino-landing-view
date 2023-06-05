@@ -17,7 +17,10 @@
     top: $s570px;
     background: #C1E8FF;
     filter: blur($s200px);
-    opacity: .4;
+    opacity: .7;
+    @-moz-document url-prefix() {
+      opacity: .4;
+    }
   }
 
   &__ellipse-purple  {
@@ -28,7 +31,10 @@
     top: $s874px;
     background: #ADABFF;
     filter: blur($s200px);
-    opacity: .4;
+    opacity: .7;
+    @-moz-document url-prefix() {
+      opacity: .4;
+    }
   }
 }
 
@@ -177,16 +183,18 @@
     }
 
     input, textarea {
-      border-color: #FFFFFF !important;
+      border-color: rgba(255,255,255,0.5) !important;
       background: none;    
       color: #FFFFFF;  
       
       &:hover {
         background-color: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255,255,255,1) !important;
       }
 
       &:focus {
         background-color: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255,255,255,1) !important;
       }
     }
 
@@ -223,7 +231,9 @@
     background: #B3FEFE;
     filter: blur($s200px);
     pointer-events: none;
-    opacity: .7;
+    @-moz-document url-prefix() {
+      opacity: .4;
+    }
   }
 
   &__ellipse-purple {
@@ -236,5 +246,8 @@
     filter: blur($s200px);
     pointer-events: none;
     opacity: .4;
+    @-moz-document url-prefix() {
+      opacity: .2;
+    }
   }
 }
