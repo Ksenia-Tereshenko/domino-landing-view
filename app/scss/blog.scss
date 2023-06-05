@@ -132,6 +132,10 @@
   padding-top: $s24px;
   position: relative;
 
+  &__left-block {
+    padding-top: $s48px;
+  }
+
   &__content {
     background: #FFFFFF;
     border-radius: $s32px;   

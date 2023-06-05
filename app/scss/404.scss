@@ -1,0 +1,39 @@
+@import "partials/variables";
+
+.page-404 {
+  padding: $s60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+
+  &__ellipse-purple {
+    width: $s200px;
+    height: $s200px;
+    position: absolute;
+    left: 50%;
+    top: $s145px;
+    transform: translateX(-50%);
+    background: rgba(173, 171, 255, 0.6);
+    filter: blur($s100px);
+    pointer-events: none;
+    opacity: .7;
+  }
+
+  &__img {
+    width: $s400px;
+    height: auto;
+    margin-bottom: $s60px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    font-size: $s24px;
+    margin-bottom: $s32px;
+    line-height: $s32px;
+    position: relative;
+    z-index: 2;
+  }
+}

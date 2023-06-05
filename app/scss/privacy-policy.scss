@@ -1,0 +1,31 @@
+@import "partials/variables";
+
+.privacy-policy-page {
+  padding-top: $s50px;
+  padding-bottom: $s96px;
+  position: relative;
+
+  &__ellipse-purple {
+    width: $s200px;
+    height: $s200px;
+    position: absolute;
+    right: 0;
+    top: $s16px;
+    background: rgba(173, 171, 255, 0.6);
+    filter: blur($s100px);
+    pointer-events: none;
+    opacity: .7;
+  }
+
+  &__content {
+    padding-top: $s50px;
+  }
+
+  h1 {
+    margin-top: $s50px;
+  }
+
+  h3 {
+    margin-bottom: $s4px;
+  }
+}
