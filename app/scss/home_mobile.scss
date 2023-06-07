@@ -77,7 +77,8 @@
     &__slide {
 
       &_title {
-        margin-bottom: $s14px;
+        margin-bottom: $mob14px;
+        font-size: $mob20px !important;
       }
 
       &_text-block {
@@ -246,6 +247,248 @@
       
       &:not(:last-child) {
         margin-bottom: $mob20px;
+      }
+    }
+
+    &__button {
+      margin: $mob20px auto 0;
+      display: block;
+    }
+  }
+
+  .our-plans {
+    max-width: initial;
+    grid-template-columns: 1fr;
+    margin-top: $mob24px;
+
+    &__subtitle {
+      font-size: $mob14px;
+      line-height: $mob16px;
+      margin-bottom: $mob16px;
+      color: $colorPurple;
+    }
+
+    &__soon {
+      gap: $mob16px;
+
+      &_item {
+        padding: $mob24px $mob24px $mob24px $mob16px;
+        border-radius: $mob16px;
+      }
+
+      &_img {
+        width: $mob40px;
+        height: $mob40px;
+        margin-right: $mob16px;
+      }
+
+      &_text {
+        font-size: $mob16px;
+        line-height: 120%;        
+      }
+    }
+
+    &__right {
+      margin-top: $mob44px;
+
+      &::before {
+        width: $mob2px;
+        transform: translate(-2.78vw,0);
+        top: 0;
+      }
+    }
+
+    &__now {
+      gap: $mob32px;
+
+      &_item {
+        padding: $mob4px;
+        gap: $mob16px;
+        border-radius: $mob16px;
+      }
+
+      &_img {
+        width: $mob126px;
+        height: $mob112px;
+        border-radius: $mob16px;
+        object-fit: cover;
+      }
+
+      &_title {
+        font-size: $mob14px;
+        line-height: $mob16px;
+        margin-bottom: $mob4px;
+      }
+
+      &_text-block {
+        padding: $mob6px 0;
+      }
+
+      &_text {
+        font-size: $mob12px;
+        line-height: $mob14px;
+        margin-bottom: $mob6px;
+      }
+
+      &_date {
+        font-size: $mob12px;
+        line-height: $mob14px;
+        padding: $mob4px $mob16px;
+        border-radius: $mob20px;
+        margin-bottom: $mob4px;
+
+        &::before {
+          height: $mob2px;
+          width: $mob4px;
+          border-radius: $mob2px;
+          left: -$mob2px;
+        }
+      }
+    }
+
+    &__buttons {
+      margin-top: $mob40px;
+    }
+  }
+
+  .partnership {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: $mob28px $mob12px;
+    gap: $mob24px;
+
+    &__text-block {
+      grid-row: 2;
+      max-width: 100%;
+    }
+
+    &__img {
+      position: relative;
+      width: $mob320px;
+      left: 0;
+
+      &_bg {
+        width: $mob84px;
+        bottom: initial;
+        top: $mob196px;
+      }
+
+      &_ellipse-purple {
+        bottom: initial;
+        top: 8%;
+        right: -12%;
+        width: $mob196px;
+        height: $mob196px;
+        opacity: .35;
+      }
+
+      &_ellipse-blue {
+        width: $mob196px;
+        height: $mob196px;
+        top: 30%;
+        right: initial;
+        left: -8%;
+        opacity: .6;
+      }
+    }
+
+    &__title {
+      margin-bottom: $mob20px !important;
+    }
+
+    &__text {
+      font-size: $mob14px;
+      line-height: $mob16px;
+    }
+
+    &__buttons {
+      margin-top: $mob20px;
+      gap: $mob20px;
+
+      .button__solid {
+        min-width: $mob160px;
+        padding: $mob12px $mob24px;
+      }
+    }
+  }
+
+  .reviews {
+    max-width: initial;
+  }
+  
+  .reviews-slider {
+    margin-top: $mob40px;
+  }
+
+  .review-item {
+    flex-direction: column;
+    gap: $mob65px;
+
+    &__photo-block {
+      width: 100%;
+      height: $mob320px;
+
+      &::after {
+        width: $mob65px;
+        height: $mob48px;
+        left: initial;
+        right: 0;
+      }
+    }
+
+    &__01-photo {
+      width: 100%;
+    }
+
+    &__02-photo {
+      width: auto;
+      height: 100%;
+    }
+
+    &__03-photo {
+      width: 100%;
+    }
+
+    &__text {
+      font-size: $mob14px;
+      line-height: $mob18px;
+      margin-bottom: $mob24px
+    }
+
+    &__contact-block {
+      gap: $mob24px;
+
+      svg {
+        width: $mob44px;
+        height: $mob44px;
+      }
+    }
+
+    &__name {
+      font-size: $mob16px;
+      line-height: $mob18px;
+      margin-bottom: $mob6px;
+    }
+
+    &__company {
+      font-size: $mob12px;
+      line-height: $mob16px;
+    }
+
+    &__arrows {
+      position: absolute;
+      right: 0;
+      top: $mob480px;
+      gap: $mob16px;
+
+      .slick-arrow {
+        width: $mob48px;
+        height: $mob48px;
+
+        &:before {
+          width: $mob24px;
+          height: $mob24px;
+        }
       }
     }
   }

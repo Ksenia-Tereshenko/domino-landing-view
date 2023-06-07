@@ -66,12 +66,116 @@
   .button {
     border-radius: $mob16px;
     font-size: $mob14px;
+    line-height: $mob16px;
     border-radius: $mob16px;
+
+    &__outline {
+      padding: $mob12px $mob24px;
+    }
 
     &__solid {
       padding: $mob16px $mob24px;
       border-color: $colorBlack;
       min-width: $mob204px;
+    }
+  }
+
+  .link {
+    font-size: $mob12px;
+    line-height: $mob14px;
+
+    &__arrow {
+      gap: $mob12px;
+
+      &_arrow {
+        width: $mob14px;
+        height: $mob12px;
+      }
+    }
+  }
+
+  .button-scroll-top {
+    width: $mob48px;
+    height: $mob48px;
+    margin: $mob20px $mob8px;
+
+    svg {
+      width: $mob24px;
+      height: $mob24px;
+    }
+  }
+
+  footer {
+    padding: $mob40px $mob36px;
+  }
+
+  .footer {
+
+    &__line {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      &:last-child {
+        margin-top: $mob32px;
+
+        .footer__menu {
+          grid-template-columns: 1fr;
+          text-align: center;
+          gap: $mob8px;
+          margin-bottom: $mob32px;
+        }
+      }
+    }
+
+    &__logo {
+      grid-row: 3;
+      justify-content: center;
+      margin-top: $mob40px;
+
+      &_icon {
+        height: $mob36px;
+      }
+
+      &_text {
+        height: $mob18px;
+        margin-left: $mob14px;
+      }
+    }
+
+    &__link {
+      font-size: $mob14px;
+      line-height: $mob16px;
+    }
+
+    &__menu {
+      display: grid;
+      grid-template-columns: max-content max-content;
+      justify-content: space-between;
+      margin-bottom: $mob40px;
+      row-gap: $mob24px;
+    }
+
+    &__social {
+      justify-content: center;
+      gap: $mob16px;
+
+      &_item {
+        width: $mob32px;
+        height: $mob32px;
+
+        svg {
+          width: $mob32px;
+          height: $mob32px;
+        }
+      }
+    }
+
+    &__copyright {
+      font-size: $mob14px;
+      line-height: $mob16px;
+      width: initial;
+      text-align: center;
+      grid-row: 2;
     }
   }
 }

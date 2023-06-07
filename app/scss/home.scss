@@ -509,7 +509,7 @@
     display: flex;
     flex-direction: column;
     gap: $s22px;
-    max-width: $s280px;  
+    max-width: $s350px;  
     margin-top: $s22px;  
   }
 
@@ -702,7 +702,7 @@
     width: $s570px;
     height: auto;
     position: absolute;
-    bottom: 0;
+    bottom: -20%;
     right: $s131px;
     z-index: 2;
 
