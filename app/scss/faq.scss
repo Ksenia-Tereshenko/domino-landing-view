@@ -16,7 +16,7 @@
     position: sticky;
     top: $s96px;
     float: left;
-    height: calc(100vh - 8.34vw);
+    height: calc(100vh - 8.04vw);
   }
 
   &__topic-block {
@@ -54,7 +54,7 @@
 
   &__question-block {
     max-width: $s221px;
-    padding-bottom: $s16px;
+    padding-bottom: $s26px;
     padding-top: $s24px;
 
     &_icon {
@@ -126,6 +126,7 @@
 .faq-block {
   margin-top: $s32px;
   width: $s650px;
+  padding-bottom: $s28px;
 
   &__anchor:not(:first-child) {
     padding-top: $s67px;

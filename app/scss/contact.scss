@@ -49,14 +49,14 @@
     background: #FFFFFF;
     border-radius: $s32px;
     border: 1px solid $colorGreyLight;
-    padding: $s30px;
+    padding: $s32px;
 
     .contact-page__subtitle {
-      margin-bottom: $s16px;      
+      margin-bottom: $s24px;      
     }
 
     input, textarea {
-      border-color: #FFFFFF;
+      border-color: $colorGreyLight;
     }
 
     .button__form {

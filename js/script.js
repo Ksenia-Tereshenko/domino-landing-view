@@ -35,7 +35,7 @@ $(document).ready(function () {
 
 });
 
-  $(window).scroll(function(){
+$(window).scroll(function(){
     let $this = $(this);
     if($this.scrollTop()>= 700){
       scrollTopBtn.addClass("visible");
@@ -78,5 +78,22 @@ scrollToBtn.click(function(e) {
 
           return false;
       }
+});
 
-  });
+//  open mobile menu 
+
+let mobOpenIcon = $(".header__mob-menu"),
+    mobOpenIconClass = "header__mob-menu_open",
+    mobileMenu = $(".mobile-menu"),
+    mobOpenClass = "mobile-menu_open",
+    body = $("body"),
+    langBtns = $(".header__langs");
+
+mobOpenIcon.click(function(e) {
+  $this = $(this);
+
+  $this.toggleClass(mobOpenIconClass);
+  mobileMenu.toggleClass(mobOpenClass);
+  body.toggleClass("overflow");
+  langBtns.toggleClass("hidden");
+});

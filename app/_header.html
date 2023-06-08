@@ -4,12 +4,7 @@
         <img class="header__logo_icon" src="images/logoIcon.svg" alt="Domino logo">
         <img class="header__logo_text" src="images/logoText.svg" alt="Domino logo">
     </a>
-    <nav class="header__menu">
-      <a class="header__link" href="blog.html">Блог</a>
-      <a class="header__link" href="partnership.html">Партнёрам</a>
-      <a class="header__link" href="faq.html">Вопрос-ответ</a>
-      <a class="header__link" href="contacts.html">Контакты</a>
-    </nav>
+    @@include('_header-menu.html')
     <div class="header__buttons">
       <div class="header__langs">
         <div class="header__langs_item header__langs_item-active">
@@ -22,5 +17,20 @@
       <button class="button button__outline" onclick="document.location='404.html'">
         Создать чат-бот
       </button>
+      <div class="header__mob-menu js-open-mob-menu ">
+        <div class="header__mob-menu_line"></div>
+        <div class="header__mob-menu_line"></div>
+      </div>
     </div>
   </header>
+  <div class="mobile-menu">
+    <div class="mobile-menu__ellipse-blue"></div>
+    <div class="mobile-menu__ellipse-purple"></div>
+    <div class="mobile-menu__links-block">
+      @@include('_header-menu.html')
+      @@include('_social-menu.html')
+    </div>
+    <button class="button button__solid" onclick="document.location='404.html'">
+      Создать чат-бот
+    </button>
+  </div>
