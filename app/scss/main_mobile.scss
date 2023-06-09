@@ -230,6 +230,15 @@
       border-color: $colorBlack;
       min-width: $mob204px;
     }
+
+    &__form {
+      margin-top: $mob32px;
+    }
+  }
+
+  p {
+    font-size: $mob16px;
+    line-height: $mob20px;
   }
 
   .link {
@@ -243,6 +252,49 @@
         width: $mob14px;
         height: $mob12px;
       }
+
+      &_back {
+        color: rgba(255,255,255,0);
+
+        svg {
+          width: $mob60px;
+          height: $mob24px;
+        }
+
+        &:hover {
+          color: rgba(255,255,255,0) !important;
+        }
+
+        &:active {
+          color: rgba(255,255,255,0) !important;
+        }
+      }
+    }
+  }
+
+  label {
+
+    &:not(:first-child) {
+      margin-top: $mob24px;
+    }
+
+    p {
+      font-size: $mob16px;
+      line-height: $mob18px;
+      margin-bottom: $mob8px;
+    }
+
+    input, textarea {
+      height: $mob48px;
+      font-size: $mob14px;
+      line-height: $mob16px;
+      border-radius: $mob12px;
+      padding: 0 $mob24px;
+    }
+
+    .error-text {
+      font-size: $mob12px;
+      line-height: $mob14px;
     }
   }
 

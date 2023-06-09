@@ -171,6 +171,7 @@
     .slick-arrow {
       width: $mob40px;
       height: $mob40px;
+      flex-shrink: 0;
 
       &:before {
         width: $mob16px;
@@ -321,7 +322,7 @@
       }
 
       &_text-block {
-        padding: $mob6px 0;
+        padding: $mob4px 0 $mob2px;
       }
 
       &_text {
@@ -484,6 +485,7 @@
       .slick-arrow {
         width: $mob48px;
         height: $mob48px;
+        flex-shrink: 0;
 
         &:before {
           width: $mob24px;

@@ -301,6 +301,11 @@ p {
       color: $colorBlack;
       display: flex;
 
+      svg {
+        width: $s60px;
+        height: $s24px;
+      }
+
       &:hover {
         color: $colorBlack !important;
 
@@ -310,7 +315,11 @@ p {
       }
 
       &:active {
-        color: $colorPurpleDark !important;
+        color: $colorPurple !important;
+
+        .big-arrow {
+          fill: $colorPurple;
+        }
       }
     } 
   }
@@ -324,18 +333,10 @@ p {
   }
 
   &:active {
-    color: $colorBlack !important;
+    color: $colorBlack;
 
     .small-arrow {
       fill: $colorBlack;
-    }
-
-    &.link__arrow_back {
-      color: $colorPurple !important;
-
-      .big-arrow {
-        fill: $colorPurple;
-      }
     }
   }
 }

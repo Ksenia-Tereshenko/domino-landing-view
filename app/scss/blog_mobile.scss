@@ -1,0 +1,142 @@
+@import "partials/variables";
+
+@media (max-width: 992px) {
+
+  .blog-block {
+    grid-template-columns: 1fr;
+    gap: $mob16px;
+
+    &::before {
+      left: 0;
+      top: 0;
+      width: $mob2px;
+      transform: translate(-2.78vw,0);
+    }
+
+    &__item {
+
+      &:nth-child(odd) {
+        margin-top: 0;
+        align-items: flex-start;
+
+        .our-plans__now_date::before {
+          right: initial;
+          left: -1vw;
+          transform: translate(-100%,-50%);
+        }
+      }
+    }
+  }
+
+  .blog-page {
+    padding-top: $mob24px;
+
+    &__subtitle {
+      font-size: $mob16px;
+      line-height: $mob18px;
+      margin-top: $mob18px;
+    }
+
+    &__tabs {
+      max-width: initial;
+      margin-top: $mob24px;
+      padding: $mob4px;
+      border-radius: $mob12px;
+    }
+
+    &__tab {
+      font-size: $mob14px;
+      line-height: $mob16px;
+      height: $mob28px;
+      border-radius: $mob12px;
+    }
+
+    &__button {
+      margin-top: $mob32px;
+    }
+
+    &__ellipse_purple {
+      width: $mob480px;
+      height: auto;
+      top: 28%;
+      left: -42%;
+    }
+
+    &__ellipse_blue {
+      width: $mob348px;
+      height: auto;
+      top: 0;
+      right: -30%;
+      left: initial;
+    }
+  }
+
+  .blog-page-detail {
+    grid-template-columns: 1fr;
+    padding-top: 0;
+    gap: $mob16px;
+
+    &__left-block {
+      padding-top: $mob16px;
+    }
+  }
+
+  .detail-content {
+    padding: $mob24px;
+
+    &__date {
+      font-size: $mob14px;
+      line-height: $mob16px;
+    }
+
+    h1 {
+      margin-top: $mob16px;
+      margin-bottom: $mob16px;
+    }
+
+    h3 {
+      font-size: $mob16px;
+      line-height: $mob20px;
+      margin-bottom: $mob16px;
+    }
+
+    ul {
+      padding-left: $mob24px;
+    }
+
+    .text-bg {
+      border-radius: $mob24px;
+      padding: $mob20px $mob24px;
+      margin-bottom: $mob16px;
+    }
+
+    .text-small {
+      font-size: $mob12px;
+      line-height: $mob14px;
+      padding-top: $mob8px;
+    }
+  }
+
+  .recomended-news {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: $mob28px;
+    padding-bottom: $mob84px;
+    margin-bottom: -$mob78px;
+
+    h2 {
+      max-width: $mob216px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__block {
+      max-width: initial;   
+      margin-top: $mob16px;   
+    }
+
+    .blog-page__button {
+      margin-top: $mob40px;
+    }
+  }
+}
