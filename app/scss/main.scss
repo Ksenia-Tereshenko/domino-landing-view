@@ -512,7 +512,7 @@ label {
     width: 100%;
     border-radius: $s12px;
     outline: none;
-    border: 1px solid $colorBlack;
+    border: 1px solid rgba(133,146,163, .5);
     padding: 0 $s24px;
     font-family: 'ProximaNova';
     font-size: $s14px;
@@ -526,6 +526,11 @@ label {
 
     &:focus {
       border-color: $colorPurple;
+    }
+
+    &::placeholder {
+      color: rgba(133,146,163, .7);
+      opacity: 1;
     }
   }
 
@@ -738,6 +743,7 @@ footer {
   z-index: 5;
   opacity: 0;
   pointer-events: none;
+  transition: ease-out .3s;
 
   &_show {
     opacity: 1;
@@ -787,6 +793,13 @@ footer {
     font-size: $s16px;
     line-height: $s22px;
     font-family: 'OpenSans';
+  }
+
+  &__succsess_icon {
+    width: $s100px;
+    height: $s100px;
+    margin: 0 auto $s24px;
+    display: block;
   }
 
   &__close-icon {

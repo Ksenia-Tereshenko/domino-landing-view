@@ -11,7 +11,9 @@
   <title>DOMINO - Вопрос-ответ</title>
 
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main_mobile.css">
   <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/faq_mobile.css">
 
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
@@ -95,16 +97,16 @@
     <div class="faq-page__left">
       
         <div class="faq-page__topic-block">
-          <div class="faq-page__topic-item faq-page__topic-item_active" data-scroll="#faq-section-01">
+          <div class="faq-page__topic-item faq-page__topic-item_active" data-scroll="#faq-section-01" id="faq-menu-01">
             Как начать
           </div>
-          <div class="faq-page__topic-item" data-scroll="#faq-section-02">
+          <div class="faq-page__topic-item" data-scroll="#faq-section-02" id="faq-menu-02">
             Создание бота
           </div>
-          <div class="faq-page__topic-item" data-scroll="#faq-section-03">
+          <div class="faq-page__topic-item" data-scroll="#faq-section-03" id="faq-menu-03">
             Категория вопросов
           </div>
-          <div class="faq-page__topic-item" data-scroll="#faq-section-04">
+          <div class="faq-page__topic-item" data-scroll="#faq-section-04" id="faq-menu-04">
             Еще категория 
           </div>
         </div>
@@ -112,11 +114,11 @@
       <div class="faq-page__question-block">
         <img class="faq-page__question-block_icon" src="images/icons/eye-pink.svg">
         <p class="faq-page__question-block_title">Не нашли, что искали?</p>
-        <p class="faq-page__question-block_text">Задайте вопрос и мы ответим вам в ближайшее время</p>
+        <p class="faq-page__question-block_text">Задайте вопрос и мы ответим вам в&nbsp;ближайшее время</p>
         <button class="faq-page__question-block_button button button__solid js-open-faq-form" >Задать вопрос</button>
       </div>
     </div>     
-    <div style="float: left; padding-left: 7.64vw;">
+    <div class="faq-page__content">
       <div class="faq-block__anchor" id="faq-section-01">
         <h1> Как начать </h1> 
         <div class="faq-block">
@@ -238,6 +240,18 @@
               Чат-боты — это просто, если у вас есть CRM Domino. Если вы хотите купить CRM систему, которая позволит вам управлять чат-ботами, то обязательно обратите внимание на Domino. Это отличная штука, которая позволяет вам создавать чат- боты и управлять ими она включает в себя все необходимое для работы с чат-ботом. Есть множество функций, которые могут быть полезны для чат-бота.
             </p>
           </div>
+          <div class="faq-block__item">
+            <div class="faq-block__title">
+              <p class="faq-block__title_text">Лёгкий импорт и экспорт базы контактов в Excel, CSV, JSON и других форматах</p>
+              <div class="faq-block__title_icon">
+                <div class="faq-block__title_line"></div>
+                <div class="faq-block__title_line"></div>
+              </div>
+            </div>
+            <p class="faq-block__text">
+              Чат-боты — это просто, если у вас есть CRM Domino. Если вы хотите купить CRM систему, которая позволит вам управлять чат-ботами, то обязательно обратите внимание на Domino. Это отличная штука, которая позволяет вам создавать чат- боты и управлять ими она включает в себя все необходимое для работы с чат-ботом. Есть множество функций, которые могут быть полезны для чат-бота.
+            </p>
+          </div>
         </div>
       </div>
       <div class="faq-block__anchor" id="faq-section-04">
@@ -309,40 +323,28 @@
     <div style="clear: both"></div>
   </div>    
 </main>
+  
   <div class="overlay js-close-form">
 </div>
-<div class="popup-form">
+<div class="popup-form popup-form__success">
   <div class="popup-form__blue-ellipse"></div>
   <div class="popup-form__purple-ellipse"></div>
   <div class="popup-form__close-icon js-close-form">
     <div class="popup-form__close-icon_line"></div>
     <div class="popup-form__close-icon_line"></div>
   </div>
-  <div class="popup-form__content">
-    <h3 class="popup-form__title">
-      Задайте вопрос и мы ответим в&nbsp;ближайшее время
-    </h3>
-    <form action="">
-  <label>
-    <p>Как к вам обращаться</p>
-    <input type="text" placeholder="Ваше имя">
-  </label>
-  <label class="error">
-    <p>Как с вами связаться</p>
-    <input type="text" placeholder="Телефон или email">
-    <p class="error-text">Пожалуйста, введите телефон или email</p>
-  </label>
-  <label>
-    <p>Ваш вопрос</p>
-    <textarea type="text" placeholder="Напишите вопрос"></textarea>
-  </label>
-  <button class="button button__solid button__form">
-    Отправить
-  </button>
-</form>   
+    <div class="popup-form__content">
+      <img class="popup-form__succsess_icon" src="images/popup-form_succsess.svg">
+      <h3 class="popup-form__title">
+        Ваше сообщение отправлено!
+      </h3>
+      <p class="popup-form__subtitle">Мы ответим в ближайшее время</p>
+      <button class="button button__solid button__form button__form_sucsess js-close-form">
+        Хорошо
+      </button>
+    </div>
   </div>
 </div>
-  
   <div class="scroll-top" id="scroll-top">
   <div class="button-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="currentColor">

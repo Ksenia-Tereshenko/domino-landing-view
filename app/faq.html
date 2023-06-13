@@ -11,7 +11,9 @@
   <title>DOMINO - Вопрос-ответ</title>
 
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main_mobile.css">
   <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/faq_mobile.css">
 
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
@@ -29,16 +31,16 @@
     <div class="faq-page__left">
       
         <div class="faq-page__topic-block">
-          <div class="faq-page__topic-item faq-page__topic-item_active" data-scroll="#faq-section-01">
+          <div class="faq-page__topic-item faq-page__topic-item_active" data-scroll="#faq-section-01" id="faq-menu-01">
             Как начать
           </div>
-          <div class="faq-page__topic-item" data-scroll="#faq-section-02">
+          <div class="faq-page__topic-item" data-scroll="#faq-section-02" id="faq-menu-02">
             Создание бота
           </div>
-          <div class="faq-page__topic-item" data-scroll="#faq-section-03">
+          <div class="faq-page__topic-item" data-scroll="#faq-section-03" id="faq-menu-03">
             Категория вопросов
           </div>
-          <div class="faq-page__topic-item" data-scroll="#faq-section-04">
+          <div class="faq-page__topic-item" data-scroll="#faq-section-04" id="faq-menu-04">
             Еще категория 
           </div>
         </div>
@@ -46,11 +48,11 @@
       <div class="faq-page__question-block">
         <img class="faq-page__question-block_icon" src="images/icons/eye-pink.svg">
         <p class="faq-page__question-block_title">Не нашли, что искали?</p>
-        <p class="faq-page__question-block_text">Задайте вопрос и мы ответим вам в ближайшее время</p>
+        <p class="faq-page__question-block_text">Задайте вопрос и мы ответим вам в&nbsp;ближайшее время</p>
         <button class="faq-page__question-block_button button button__solid js-open-faq-form" >Задать вопрос</button>
       </div>
     </div>     
-    <div style="float: left; padding-left: 7.64vw;">
+    <div class="faq-page__content">
       <div class="faq-block__anchor" id="faq-section-01">
         <h1> Как начать </h1> 
         <div class="faq-block">
@@ -172,6 +174,18 @@
               Чат-боты — это просто, если у вас есть CRM Domino. Если вы хотите купить CRM систему, которая позволит вам управлять чат-ботами, то обязательно обратите внимание на Domino. Это отличная штука, которая позволяет вам создавать чат- боты и управлять ими она включает в себя все необходимое для работы с чат-ботом. Есть множество функций, которые могут быть полезны для чат-бота.
             </p>
           </div>
+          <div class="faq-block__item">
+            <div class="faq-block__title">
+              <p class="faq-block__title_text">Лёгкий импорт и экспорт базы контактов в Excel, CSV, JSON и других форматах</p>
+              <div class="faq-block__title_icon">
+                <div class="faq-block__title_line"></div>
+                <div class="faq-block__title_line"></div>
+              </div>
+            </div>
+            <p class="faq-block__text">
+              Чат-боты — это просто, если у вас есть CRM Domino. Если вы хотите купить CRM систему, которая позволит вам управлять чат-ботами, то обязательно обратите внимание на Domino. Это отличная штука, которая позволяет вам создавать чат- боты и управлять ими она включает в себя все необходимое для работы с чат-ботом. Есть множество функций, которые могут быть полезны для чат-бота.
+            </p>
+          </div>
         </div>
       </div>
       <div class="faq-block__anchor" id="faq-section-04">
@@ -243,8 +257,8 @@
     <div style="clear: both"></div>
   </div>    
 </main>
-  @@include('_faq-form.html')
-  <!-- @@include('_form-sucsess.html') -->
+  <!-- @@include('_faq-form.html') -->
+  @@include('_form-sucsess.html')
   @@include('_footer.html')
 </body>
 <script type="text/javascript" src="js/jquery-1.11.0.js"></script>

@@ -24,16 +24,19 @@ $(document).ready(function () {
   let openFaqFormBtn = $(".js-open-faq-form"),
       overlay = $(".overlay"),
       formFaq = $(".popup-form"),
-      closeForm = $(".js-close-form");
+      closeForm = $(".js-close-form"),
+      body = $("body");
 
   openFaqFormBtn.click(function() {
     overlay.addClass("overlay_show");
     formFaq.addClass("popup-form_show");
+    body.addClass("overflow");
   });
 
   closeForm.click(function() {
     overlay.removeClass("overlay_show");
     formFaq.removeClass("popup-form_show");
+    body.removeClass("overflow");
   });
 
     // left navigation on faq page
@@ -100,13 +103,13 @@ $menuItem4 = $(".faq-page__topic-item:nth-child(4)"),
 $allMenuItems = $(".faq-page__topic-item");
 let navRightActive = "faq-page__topic-item_active";
 
-$(window).scroll(function() {
+function scrollDesctop() {
 
   let scroll = $(window).scrollTop() + $(window).height();
 
-  let offsetTop2 = $elementCase2.offset().top + $elementCase2.outerHeight()/0.9,
-      offsetTop3 = $elementCase3.offset().top + $elementCase3.outerHeight()/0.9,
-      offsetTop4 = $elementCase4.offset().top + $elementCase4.outerHeight()/1.5;
+    let offsetTop2 = $elementCase2.offset().top + $elementCase2.outerHeight()/0.9,
+    offsetTop3 = $elementCase3.offset().top + $elementCase3.outerHeight()/0.9,
+    offsetTop4 = $elementCase4.offset().top + $elementCase4.outerHeight()/1.5;
 
   if (scroll > 1 && scroll < offsetTop2) {
 
@@ -135,5 +138,73 @@ $(window).scroll(function() {
       $menuItem4.addClass(navRightActive);
     }
   }
+}
 
-});
+function scrollMobile() {  
+
+  let scroll = $(window).scrollTop() + $(window).height(),
+      scrollBlock = $(".faq-page__topic-block");
+
+    let offsetTop2 = $elementCase2.offset().top + $elementCase2.outerHeight(),
+    offsetTop3 = $elementCase3.offset().top + $elementCase3.outerHeight(),
+    offsetTop4 = $elementCase4.offset().top + $elementCase4.outerHeight();
+
+    console.log("scroll " + scroll);
+    console.log("offsetTop2 " + offsetTop2);
+
+  if (scroll > 1 && scroll < offsetTop2) {
+
+      if (!$menuItem1.hasClass(navRightActive)) {
+          $allMenuItems.removeClass(navRightActive);
+          $menuItem1.addClass(navRightActive);
+          scrollBlock.animate({'scrollLeft': 0}, 500); 
+      }
+
+  } else if (scroll > offsetTop2 && scroll < offsetTop3) {
+
+      if (!$menuItem2.hasClass(navRightActive)) {
+          $allMenuItems.removeClass(navRightActive);
+          $menuItem2.addClass(navRightActive);
+          var scrollTo = $('#faq-menu-02').position().left;
+          scrollBlock.animate({'scrollLeft': scrollTo}, 500); 
+      }
+
+  } else if (scroll > offsetTop3 && scroll < offsetTop4) {
+
+      if (!$menuItem3.hasClass(navRightActive)) {
+          $allMenuItems.removeClass(navRightActive);
+          $menuItem3.addClass(navRightActive);
+          var scrollTo = $('#faq-menu-03').position().left;
+          scrollBlock.animate({'scrollLeft': scrollTo}, 500); 
+      }
+
+  } else if (scroll > offsetTop4) {
+    if (!$menuItem4.hasClass(navRightActive)) {
+      $allMenuItems.removeClass(navRightActive);
+      $menuItem4.addClass(navRightActive);
+
+      var scrollTo = $('#faq-menu-04').position().left;
+      scrollBlock.animate({'scrollLeft': scrollTo}, 500); 
+    }
+  }
+}
+
+
+if (window.matchMedia("(max-width:992px)").matches) {
+
+  $(window).scroll(function() {
+
+    //scrollMobile();
+
+  });
+
+} else {
+
+  $(window).scroll(function() {
+
+    scrollDesctop();
+  
+  });
+
+}
+

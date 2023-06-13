@@ -1,0 +1,125 @@
+@import "partials/variables";
+
+@media (max-width: 992px) {
+
+  .faq-page {
+    margin-bottom: $mob196px;
+
+    &__left {
+      float: none;
+      height: initial;
+      top: $mob44px;
+      z-index: 3;
+      position: static;
+    }
+
+    &__topic-block {
+      flex-direction: row;
+      gap: 0;
+      padding-bottom: $mob8px;
+      backdrop-filter: blur(4px);
+      background: rgba(249, 251, 255, 0.4);
+    }
+
+    &__topic-item {
+      font-size: $mob14px;
+      line-height: $mob16px;
+      padding: $mob16px $mob24px;
+      margin-right: initial;
+      border-radius: $mob16px;
+      white-space: nowrap;
+    }
+
+    &__content {
+      float: initial;
+      padding-left: 0;
+      max-width: initial;
+      width: 100%;
+      padding-top: $mob24px;
+    }
+
+    &__question-block {
+      padding: 0;
+      position: absolute;
+      bottom: -$mob24px;
+      transform: translateY(100%);
+      left: 0;
+      max-width: initial;
+      text-align: center;
+      width: 100%;
+
+      &_icon {
+        width: $mob40px;
+        height: $mob22px;
+        margin-bottom: $mob16px;
+      }
+
+      &_title {
+        font-size: $mob20px;
+        line-height: $mob24px;
+        margin-bottom: $mob8px;
+      }
+
+      &_text {
+        font-size: $mob14px;
+        line-height: $mob16px;
+        max-width: $mob204px;
+        margin: 0 auto;
+      }
+
+      &_button {
+        margin-top: $mob24px;
+      }
+    }
+  }
+
+  .faq-block {
+    width: 100%;
+    margin-top: $mob16px;
+
+    &__anchor:not(:first-child) {
+      padding-top: $mob48px;
+      margin-top: -$mob16px;
+      // padding-top: $mob96px;
+      // margin-top: -$mob80px;
+    }
+
+    &__item {
+      padding: $mob12px $mob16px;
+      border-radius: $mob16px;
+      margin-bottom: $mob8px;
+    }
+
+    &__title {
+
+      &_text {
+        font-size: $mob16px;
+        line-height: $mob18px;
+      }
+
+      &_icon {
+        width: $mob24px;
+        height: $mob24px;
+      }
+
+      &_line {
+        width: $mob16px;
+        height: $mob1px;
+
+        &:first-child {
+          margin-left: $mob3px;
+        }
+  
+        &:nth-child(2) {
+          margin-left: -$mob3px;     
+        }
+      }
+    }
+
+    &__text {
+      font-size: $mob14px;
+      line-height: $mob16px;
+      padding-top: $mob24px;
+    }
+  }
+}

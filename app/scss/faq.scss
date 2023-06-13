@@ -26,6 +26,11 @@
     flex-direction: column;
   }
 
+  &__content {
+    float: left;
+    padding-left: $s110px;
+  }
+
   &__topic-item {
     padding: $s16px $s24px;
     background: none;
