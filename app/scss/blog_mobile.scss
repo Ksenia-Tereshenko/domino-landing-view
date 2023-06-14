@@ -5,12 +5,16 @@
   .blog-block {
     grid-template-columns: 1fr;
     gap: $mob16px;
+    margin-top: 0;
+    padding-top: $mob16px;
 
     &::before {
       left: 0;
       top: 0;
       width: $mob2px;
-      transform: translate(-2.78vw,0);
+      transform: translate(-$mob8px,0);
+      background: linear-gradient(180deg,rgba(109,91,247,0) 0,#6d5bf7 5%,#6d5bf7 95%,rgba(109,91,247,0) 100%);
+      height: calc(100% + 4.27vw);
     }
 
     &__item {
@@ -21,9 +25,13 @@
 
         .our-plans__now_date::before {
           right: initial;
-          left: -1vw;
+          left: -$mob3px;
           transform: translate(-100%,-50%);
         }
+      }
+
+      .our-plans__now_date::before {
+        left: -$mob3px;
       }
     }
   }
@@ -52,7 +60,7 @@
     }
 
     &__button {
-      margin-top: $mob32px;
+      margin-top: $mob24px;
     }
 
     &__ellipse_purple {
@@ -136,7 +144,11 @@
     }
 
     .blog-page__button {
-      margin-top: $mob40px;
+      margin-top: $mob24px;
+    }
+ 
+    .our-plans__now_item-block:not(:first-child) {
+      margin-top: $mob24px;
     }
   }
 }

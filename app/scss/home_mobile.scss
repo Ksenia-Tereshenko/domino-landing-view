@@ -18,7 +18,7 @@
   }
 
   .home-section {
-    padding: $mob20px 0;
+    padding: $mob40px 0;
 
     &__two-column {
       grid-template-columns: 1fr;
@@ -52,7 +52,7 @@
       }
 
       &__button {
-        margin: $mob8px auto 0;
+        margin: $mob24px auto 0;
         display: block;
       }
 
@@ -218,7 +218,7 @@
     }
 
     &__button {
-      margin-top: $mob16px;
+      margin-top: $mob24px;
     }
   }
 
@@ -252,7 +252,7 @@
     }
 
     &__button {
-      margin: $mob20px auto 0;
+      margin: $mob24px auto 0;
       display: block;
     }
   }
@@ -294,13 +294,15 @@
 
       &::before {
         width: $mob2px;
-        transform: translate(-2.78vw,0);
-        top: 0;
+        transform: translate(-$mob8px,0);
+        top: $mob16px;
+        background: linear-gradient(180deg,rgba(109,91,247,0) 0,#6d5bf7 6%,#6d5bf7 94%,rgba(109,91,247,0) 100%);
+        height: 100%;
       }
     }
 
     &__now {
-      gap: $mob32px;
+      gap: $mob24px;
 
       &_item {
         padding: $mob4px;
@@ -340,15 +342,15 @@
 
         &::before {
           height: $mob2px;
-          width: $mob4px;
+          width: $mob5px;
           border-radius: $mob2px;
-          left: -$mob2px;
+          left: -$mob3px;
         }
       }
     }
 
     &__buttons {
-      margin-top: $mob40px;
+      margin-top: $mob24px;
     }
   }
 
@@ -403,7 +405,7 @@
     }
 
     &__buttons {
-      margin-top: $mob20px;
+      margin-top: $mob24px;
       gap: $mob20px;
 
       .button__solid {
