@@ -37,3 +37,28 @@
     z-index: 2;
   }
 }
+
+@media (max-width: 992px) {
+
+  .page-404 {
+    padding: $mob40px $mob32px 0;
+
+    &__title {
+      font-size: $mob24px;
+      line-height: $mob32px;
+      margin-bottom: $mob32px;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+      margin-bottom: $mob32px;
+    }
+
+    &__ellipse-purple {
+      width: $mob144px;
+      height: $mob144px;
+      filter: blur($mob80px);
+    }
+  }  
+}
