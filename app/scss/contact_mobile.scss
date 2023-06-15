@@ -19,17 +19,17 @@
       max-width: 100%;
       font-size: $mob18px;
       line-height: $mob20px;
-      margin-bottom: $mob8px;
+      margin-bottom: $mob16px;
     }
 
     &__text {
       font-size: $mob14px;
       line-height: $mob18px;
-      margin-bottom: $mob24px;
+      margin-bottom: $mob32px;
     }
 
     &__contact-block {
-      padding-top: $mob28px;
+      padding-top: $mob32px;
     }
 
     &__contact_item {
@@ -43,7 +43,7 @@
       &_icon {
         width: $mob24px;
         height: $mob24px;
-        margin-right: $mob12px;
+        margin-right: $mob8px;
       }
     }
 

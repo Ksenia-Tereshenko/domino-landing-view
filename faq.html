@@ -323,28 +323,40 @@
     <div style="clear: both"></div>
   </div>    
 </main>
-  
   <div class="overlay js-close-form">
 </div>
-<div class="popup-form popup-form__success">
+<div class="popup-form">
   <div class="popup-form__blue-ellipse"></div>
   <div class="popup-form__purple-ellipse"></div>
   <div class="popup-form__close-icon js-close-form">
     <div class="popup-form__close-icon_line"></div>
     <div class="popup-form__close-icon_line"></div>
   </div>
-    <div class="popup-form__content">
-      <img class="popup-form__succsess_icon" src="images/popup-form_succsess.svg">
-      <h3 class="popup-form__title">
-        Ваше сообщение отправлено!
-      </h3>
-      <p class="popup-form__subtitle">Мы ответим в ближайшее время</p>
-      <button class="button button__solid button__form button__form_sucsess js-close-form">
-        Хорошо
-      </button>
-    </div>
+  <div class="popup-form__content">
+    <h3 class="popup-form__title">
+      Задайте вопрос и мы ответим в&nbsp;ближайшее время
+    </h3>
+    <form action="">
+  <label>
+    <p>Как к вам обращаться</p>
+    <input type="text" placeholder="Ваше имя">
+  </label>
+  <label class="error">
+    <p>Как с вами связаться</p>
+    <input type="text" placeholder="Телефон или email">
+    <p class="error-text">Пожалуйста, введите телефон или email</p>
+  </label>
+  <label>
+    <p>Ваш вопрос</p>
+    <textarea type="text" placeholder="Напишите вопрос"></textarea>
+  </label>
+  <button class="button button__solid button__form">
+    Отправить
+  </button>
+</form>   
   </div>
 </div>
+  
   <div class="scroll-top" id="scroll-top">
   <div class="button-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="currentColor">
