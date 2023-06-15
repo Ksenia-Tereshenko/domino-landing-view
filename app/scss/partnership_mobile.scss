@@ -6,7 +6,7 @@
 
     &-page {
       padding-top: $mob24px;
-      padding-bottom: $mob12px;      
+      padding-bottom: $mob20px;      
 
       h1 {
         margin-bottom: $mob24px;
@@ -35,11 +35,12 @@
 
     &-content {
       max-width: inherit;
-      margin-top: $mob24px;
+      margin-top: $mob80px;
 
       &__column {
         flex-wrap: wrap;
         margin-top: $mob24px;
+        margin-bottom: $mob80px;
         gap: $mob8px;
 
         .partnership-content__bg {
@@ -67,7 +68,7 @@
 
       &__text-center {
         max-width: initial;
-        margin-top: $mob32px;
+        margin-top: $mob40px;
       }
 
       &__text-quotes {
@@ -75,7 +76,7 @@
         line-height: $mob18px;
         background-size: $mob126px $mob126px;
         padding: $mob65px 0;
-        margin-top: $mob16px;
+        margin-top: $mob40px;
 
         &::before, &::after {
           width: $mob50px;
