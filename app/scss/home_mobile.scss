@@ -77,14 +77,16 @@
     &__slide {
 
       &_title {
-        margin-bottom: $mob14px;
+        margin-bottom: $mob12px;
         font-size: $mob20px !important;
+        line-height: $mob28px !important;
       }
 
       &_text-block {
         grid-row: 2;
         height: $mob348px;
         padding: $mob16px;
+        border-radius: $mob16px;
       }
 
       &_img-block {
@@ -188,6 +190,7 @@
     &__item {
       width: $mob168px;
       padding: $mob4px $mob6px $mob16px $mob6px;
+      border-radius: $mob32px;
 
       &_img {
         width: $mob160px;
@@ -285,7 +288,7 @@
 
       &_text {
         font-size: $mob16px;
-        line-height: 120%;        
+        line-height: $mob22px;        
       }
     }
 
@@ -401,7 +404,7 @@
 
     &__text {
       font-size: $mob14px;
-      line-height: $mob16px;
+      line-height: $mob20px;
     }
 
     &__buttons {
@@ -454,7 +457,7 @@
 
     &__text {
       font-size: $mob14px;
-      line-height: $mob18px;
+      line-height: $mob20px;
       margin-bottom: $mob24px
     }
 

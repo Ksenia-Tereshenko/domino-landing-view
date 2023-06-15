@@ -193,7 +193,7 @@
 
   h1, h2.home-section__title {
     font-size: $mob24px;
-    line-height: $mob28px;
+    line-height: $mob32px;
   }
 
   .home-list {
@@ -201,6 +201,11 @@
     &__item {
       padding-left: $mob28px;
       font-size: $mob14px;
+      line-height: $mob20px;
+
+      &:not(:last-child) {
+        margin-bottom: $mob8px;
+      }
 
       br {
         display: none;
@@ -238,7 +243,7 @@
 
   p {
     font-size: $mob16px;
-    line-height: $mob20px;
+    line-height: $mob22px;
   }
 
   .link {

@@ -62,7 +62,7 @@
 
       &_text {
         font-size: $mob14px;
-        line-height: $mob16px;
+        line-height: $mob20px;
         max-width: $mob204px;
         margin: 0 auto;
       }
@@ -88,13 +88,17 @@
       padding: $mob12px $mob16px;
       border-radius: $mob16px;
       margin-bottom: $mob8px;
+
+      &:hover, &:active {
+        background: #FFFFFF;
+      }
     }
 
     &__title {
 
       &_text {
         font-size: $mob16px;
-        line-height: $mob18px;
+        line-height: $mob20px;
       }
 
       &_icon {
@@ -118,7 +122,7 @@
 
     &__text {
       font-size: $mob14px;
-      line-height: $mob16px;
+      line-height: $mob20px;
       padding-top: $mob24px;
     }
   }
