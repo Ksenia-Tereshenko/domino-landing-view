@@ -470,13 +470,13 @@
   &_ellips-blue {
     width: $s372px;
     height: $s372px;
-    background: #C1E8FF;
+    background: #a2ddff;
     position: absolute;
     top: 38%;
     right: 23%;
     pointer-events: none;
     filter: blur($s200px);
-    opacity: .5;
+    opacity: .7
   }
 
   &__button {

@@ -234,6 +234,18 @@
 
     &__img {
       width: 100%;
+
+      &_bg {
+        width: 100%;
+      }
+
+      &_gear {
+        width: $mob84px;
+        height: $mob84px;
+        top: 0;
+        right: initial;
+        left: 0;
+      }
     }
 
     &__text-block {
