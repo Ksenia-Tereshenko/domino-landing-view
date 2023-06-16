@@ -33,13 +33,13 @@
   }
 
   .home-section__first_ellips-blue {
-    animation: rotateScale 7s infinite linear;
+    animation: rotateScale 12s infinite linear;
     top: 30%;
     left: -30%;
   }
 
   .home-section__first_ellips-purple {
-    animation: rotateScaleRev 7s infinite linear;    
+    animation: rotateScaleRev 12s infinite linear;    
     top: -9.03vw; 
     right: 9.03vw;
   }
@@ -81,16 +81,10 @@
                scale(1.5)
                rotate(-360deg);
 }
-5% {
-  transform: rotate(360deg)
-             translate(50%)
-             scale(1.5)
-             rotate(-360deg);
-}
   50% {
     transform: rotate(180deg)
-              scale(.9)
-              translateY(-30%)
+              scale(1)
+              translateY(30%)
               rotate(-180deg);
   } 
   to {
