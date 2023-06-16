@@ -39,7 +39,7 @@ $(document).ready(function () {
           }, 1000);
 
           return false;
-      }
+      }    
 
   });
 
@@ -61,6 +61,9 @@ $(document).ready(function () {
   $menuItem6 = $(".nav-right__item:nth-child(6)"),
   $menuItem7 = $(".nav-right__item:nth-child(7)"),
   $allMenuItems = $(".nav-right__item");
+
+  let previousScroll = 0,
+      count = 0;
 
   $(window).scroll(function() {
 
@@ -123,6 +126,26 @@ $(document).ready(function () {
     }
 
   }
+
+  let $gear = $(".how-work__img_gear");
+
+  let currentScroll = $(this).scrollTop();
+  if(currentScroll > previousScroll) {
+    // scroll bottom
+    counts = count - 1;
+  } else {
+    // scroll top
+    counts = count + 1;
+  }
+
+  $gear.css({
+    'transform': 'rotate(' + counts*2 + 'deg)'
+  })
+
+  previousScroll = currentScroll;
+  count = counts;
+
+
 });
 
   // posibility slider on home page

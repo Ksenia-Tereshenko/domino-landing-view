@@ -498,7 +498,24 @@
   &__img {
     width: $s560px;
     position: relative;
-    z-index: 2;
+    z-index: 3;
+
+    &_gear {
+      position: absolute;
+      width: $s145px;
+      height: $s145px;
+      top: 0;
+      right: $s420px;
+      z-index: 2;
+    }
+
+    &_bg {
+      position: absolute;
+      width: $s560px;
+      height: auto;
+      top: 0;
+      right: 0;
+    }
   }
 
   &__text-block {
