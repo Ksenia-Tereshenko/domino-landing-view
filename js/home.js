@@ -175,6 +175,9 @@ $(document).ready(function () {
     arrows: false,
     fade: false,
     speed: 0,
+    touchMove: false,
+    draggable: false,
+    swipe: false,
     appendDots: ".possibilities__dots",
   });
 
