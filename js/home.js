@@ -153,14 +153,18 @@ $(document).ready(function () {
   let sliderLine = $(".possibilities__dots_line"),
     quantitySlides = $(".possibilities__slide").length,
     sliderLineInitWidth = 100 / quantitySlides;
+  let posibilityNextButton = $(".possibilities__buttons .slick-next.slick-arrow"),
+      posibilityPrevButton = $(".possibilities__buttons .slick-prev.slick-arrow");
 
   sliderLine.width(sliderLineInitWidth + "%");
 
   $('.possibilities__slider').on('init', function( slick ){
     $('.possibilities__slide').addClass("show");
     $(".possibilities__slide_animation-text").css({"transform" : "translateX(-120%)"});
+    $(".possibilities__slide_img-block").css({"transform" : "translateX(-120%)"});
+    $(".possibilities__slide:first-child .possibilities__slide_img-block").css({"transform" : "translateX(0)"});
     $(".possibilities__slide:first-child .possibilities__slide_animation-text").css({"transform" : "translateX(0)"});
-    $(".possibilities__buttons .slick-prev.slick-arrow").addClass("slick-disabled").css({"pointer-events":"none"});
+    posibilityPrevButton.addClass("slick-disabled").css({"pointer-events":"none"});
   });
 
   $(".possibilities__slider").slick({
@@ -174,21 +178,26 @@ $(document).ready(function () {
     appendDots: ".possibilities__dots",
   });
 
-      $(".possibilities__buttons .slick-next.slick-arrow").click(function(e) { 
-        let nextSlideTest = $(".slick-current.slick-active .possibilities__slide_animation-text");
+      posibilityNextButton.click(function(e) { 
+        let nextSlideTest = $(".slick-current.slick-active .possibilities__slide_animation-text"),
+            nextSlideImg = $(".slick-current.slick-active .possibilities__slide_img-block");
         nextSlideTest.css({"transform" : "translateX(120%)"}); // right
+        nextSlideImg.css({"transform" : "translateX(120%)"});
           setTimeout(function() {
             $(".possibilities__slider").slick('slickNext');
-          }, 500);       
+          }, 400);       
        });
 
-       $(".possibilities__buttons .slick-prev.slick-arrow").click(function(e) { 
-        let prevSlideTest = $(".slick-current.slick-active .possibilities__slide_animation-text");
+       posibilityPrevButton.click(function(e) { 
+        let prevSlideTest = $(".slick-current.slick-active .possibilities__slide_animation-text"),
+            prevSlideImg = $(".slick-current.slick-active .possibilities__slide_img-block");
 
           prevSlideTest.css({"transform" : "translateX(-120%)"}); // left
+          prevSlideImg.css({"transform" : "translateX(-120%)"});
+
           setTimeout(function() {
             $(".possibilities__slider").slick('slickPrev');
-          }, 500);           
+          }, 400);           
             
        });
 
@@ -196,20 +205,22 @@ $(document).ready(function () {
     let slideCurrent = currentSlide.currentSlide + 1,
         lineItem = (100 / quantitySlides) * slideCurrent;
         sliderLine.width(lineItem + "%");
-        let nextSlideText = $(".slick-current.slick-active .possibilities__slide_animation-text");
+        let nextSlideText = $(".slick-current.slick-active .possibilities__slide_animation-text"),
+            nextSlideImg = $(".slick-current.slick-active .possibilities__slide_img-block");
 
     nextSlideText.css({"transform" : "translateX(0)"}); 
+    nextSlideImg.css({"transform" : "translateX(0)"}); 
 
     if(currentSlide.currentSlide == 0) {
-      $(".possibilities__buttons .slick-prev.slick-arrow").addClass("slick-disabled").css({"pointer-events":"none"});
+      posibilityPrevButton.addClass("slick-disabled").css({"pointer-events":"none"});
     } else {
-      $(".possibilities__buttons .slick-prev.slick-arrow").removeClass("slick-disabled").css({"pointer-events":"auto"});
+      posibilityPrevButton.removeClass("slick-disabled").css({"pointer-events":"auto"});
     }
 
     if(currentSlide.currentSlide == currentSlide.slideCount - 1) {
-      $(".possibilities__buttons .slick-next.slick-arrow").addClass("slick-disabled").css({"pointer-events":"none"});
+      posibilityNextButton.addClass("slick-disabled").css({"pointer-events":"none"});
     } else {
-      $(".possibilities__buttons .slick-next.slick-arrow").removeClass("slick-disabled").css({"pointer-events":"auto"});
+      posibilityNextButton.removeClass("slick-disabled").css({"pointer-events":"auto"});
     }
 
   });

@@ -206,7 +206,7 @@
    height: 100%;
 
    &_animation-text {
-    transition: ease-out .5s;
+    transition: ease-out .4s;
    }
 
     &_text-block {
@@ -222,8 +222,13 @@
       margin-bottom: $s32px !important;
     }
 
+    &_img-animation {
+      overflow: hidden;
+    }
+
     &_img-block {
       position: relative;
+      transition: ease-out .4s;
     }
 
     &-img01 {
