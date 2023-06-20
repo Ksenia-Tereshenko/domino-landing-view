@@ -205,12 +205,17 @@
   &__slide {    
    height: 100%;
 
+   &_animation-text {
+    transition: ease-out .5s;
+   }
+
     &_text-block {
       padding: $s40px;
       border: 1px solid $colorGreyBorder;
       border-radius: $s32px;
       background: #FFFFFF;
       height: 36.12vw;
+      overflow: hidden;
     }
 
     &_title {

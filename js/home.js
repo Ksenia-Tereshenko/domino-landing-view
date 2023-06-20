@@ -158,6 +158,9 @@ $(document).ready(function () {
 
   $('.possibilities__slider').on('init', function( slick ){
     $('.possibilities__slide').addClass("show");
+    $(".possibilities__slide_animation-text").css({"transform" : "translateX(-120%)"});
+    $(".possibilities__slide:first-child .possibilities__slide_animation-text").css({"transform" : "translateX(0)"});
+    $(".possibilities__buttons .slick-prev.slick-arrow").addClass("slick-disabled").css({"pointer-events":"none"});
   });
 
   $(".possibilities__slider").slick({
@@ -165,16 +168,50 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
-    appendArrows: ".possibilities__arrows",
-    fade: true,
-    speed: 900,
+    arrows: false,
+    fade: false,
+    speed: 0,
     appendDots: ".possibilities__dots",
   });
 
-  $(".possibilities__slider").on("afterChange", function (slick, currentSlide) {
+      $(".possibilities__buttons .slick-next.slick-arrow").click(function(e) { 
+        let nextSlideTest = $(".slick-current.slick-active .possibilities__slide_animation-text");
+        nextSlideTest.css({"transform" : "translateX(120%)"}); // right
+          setTimeout(function() {
+            $(".possibilities__slider").slick('slickNext');
+          }, 500);       
+       });
+
+       $(".possibilities__buttons .slick-prev.slick-arrow").click(function(e) { 
+        let prevSlideTest = $(".slick-current.slick-active .possibilities__slide_animation-text");
+
+          prevSlideTest.css({"transform" : "translateX(-120%)"}); // left
+          setTimeout(function() {
+            $(".possibilities__slider").slick('slickPrev');
+          }, 500);           
+            
+       });
+
+  $(".possibilities__slider").on("afterChange", function (slick, currentSlide, direction) {
     let slideCurrent = currentSlide.currentSlide + 1,
         lineItem = (100 / quantitySlides) * slideCurrent;
-    sliderLine.width(lineItem + "%");
+        sliderLine.width(lineItem + "%");
+        let nextSlideText = $(".slick-current.slick-active .possibilities__slide_animation-text");
+
+    nextSlideText.css({"transform" : "translateX(0)"}); 
+
+    if(currentSlide.currentSlide == 0) {
+      $(".possibilities__buttons .slick-prev.slick-arrow").addClass("slick-disabled").css({"pointer-events":"none"});
+    } else {
+      $(".possibilities__buttons .slick-prev.slick-arrow").removeClass("slick-disabled").css({"pointer-events":"auto"});
+    }
+
+    if(currentSlide.currentSlide == currentSlide.slideCount - 1) {
+      $(".possibilities__buttons .slick-next.slick-arrow").addClass("slick-disabled").css({"pointer-events":"none"});
+    } else {
+      $(".possibilities__buttons .slick-next.slick-arrow").removeClass("slick-disabled").css({"pointer-events":"auto"});
+    }
+
   });
 
    // reviews slider on home page
