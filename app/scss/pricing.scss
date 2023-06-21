@@ -32,6 +32,7 @@
 
   &__tabs-block {
     margin-top: $s24px;
+    padding-bottom: $s60px;
   }
 
   &__tab {
@@ -46,10 +47,12 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      border: 1px solid $colorGreyLight;
 
       &_active {
         background: $colorPurple;
         color: #FFFFFF;
+        border-color: $colorPurple !important;
 
         .price-page__tab_item-feature-item::before {
           background-image: url('../images/icons/check-white.svg');
@@ -181,6 +184,57 @@
         margin-top: $s24px;
         width: 100%;
       }
+
+      &:hover {
+        border-color: #C0E8FF;
+      }
     }
   }
+
+  &__table {
+
+    &-block {
+      padding-top: $s60px;  
+  }
+    
+    &_grid {
+      display: grid;
+      grid-template-columns: $s315px repeat(4, 1fr);
+    }
+
+    &_header {
+      margin-top: $s40px;
+
+      &-scroll-bottom {
+        height: $s32px;
+        background: #FFFFFF;
+        border: 1px solid $colorGreyLight;
+        border-bottom: none;
+        border-radius: $s32px 0 0 0;
+      }
+
+      &_sticky {
+        position: sticky;
+        top: $s64px;
+        backdrop-filter: blur(4px);
+        background: rgba(249, 251, 255, 0.4);
+        z-index: 3;
+      }
+    }
+
+    &_header-item {
+      border: 1px solid $colorGreyLight;
+      border-bottom: none;
+      border-radius: $s32px $s32px 0 0;
+      background: #FFFFFF;
+      text-align: center;
+      padding: $s16px;
+      font-size: $s24px;
+      line-height: $s32px;
+    }
+
+    &_price-block {
+      background: #FFFFFF;
+    }
+  }  
 }

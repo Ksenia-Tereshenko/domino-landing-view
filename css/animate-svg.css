@@ -126,6 +126,8 @@
 
 .price-page__first-circle, .price-page__first-letter, .price-page__first-elements {
   transition: ease-out .3s;
+  position: absolute;
+  transform-origin: center center;
 }
 
 .price-page__tab_item:first-child:hover .price-page__first-circle {
@@ -133,11 +135,12 @@
 }
 
 .price-page__tab_item:first-child:hover .price-page__first-letter {
-  transform: translate(0, 1px) scale(1.04);
+  transform: scale(1.06) translate(-1px, 3px);
   transform-origin: bottom left;
 }
 
 .price-page__tab_item:first-child:hover .price-page__first-elements {
-  transform: scale(1.02);
-  transform-origin: bottom right;
+  transform: scale(1.06) translate(-2px, 1px);
+  position: absolute;
+  transform-origin: center center;
 }
