@@ -123,3 +123,21 @@
     rotate(0);
   }
 }
+
+.price-page__first-circle, .price-page__first-letter, .price-page__first-elements {
+  transition: ease-out .3s;
+}
+
+.price-page__tab_item:first-child:hover .price-page__first-circle {
+  fill: rgba(193, 204, 255, 0.4);
+}
+
+.price-page__tab_item:first-child:hover .price-page__first-letter {
+  transform: translate(0, 1px) scale(1.04);
+  transform-origin: bottom left;
+}
+
+.price-page__tab_item:first-child:hover .price-page__first-elements {
+  transform: scale(1.02);
+  transform-origin: bottom right;
+}

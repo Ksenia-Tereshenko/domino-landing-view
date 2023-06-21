@@ -50,6 +50,27 @@
       &_active {
         background: $colorPurple;
         color: #FFFFFF;
+
+        .price-page__tab_item-feature-item::before {
+          background-image: url('../images/icons/check-white.svg');
+        }
+
+        .price-page__tab_item-button {
+          background: $colorBlack;
+          color: #FFFFFF;
+
+          &:hover {
+            background: $colorBlueLight;
+            border-color: #FFFFFF;
+            color: $colorBlack;
+          }
+
+          &:active {
+            background: $colorBlue;
+            border-color: #FFFFFF;
+            color: $colorBlack;
+          }
+        }
       }
 
       &_header {
@@ -67,7 +88,7 @@
           display: flex;
           flex-direction: column;
           gap: $s8px;
-          justify-content: center;
+          padding-top: $s16px;
         }
 
         &-title {
