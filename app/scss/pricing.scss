@@ -183,6 +183,7 @@
       &-button {
         margin-top: $s24px;
         width: 100%;
+        padding: $s16px $s24px;
       }
 
       &:hover {
@@ -195,7 +196,8 @@
 
     &-block {
       padding-top: $s60px;  
-  }
+      padding-bottom: $s120px;
+    }
     
     &_grid {
       display: grid;
@@ -231,10 +233,99 @@
       padding: $s16px;
       font-size: $s24px;
       line-height: $s32px;
+
+      &_active {
+        background: $colorPurple;
+        color: #FFFFFF;
+        border-color: $colorPurple;
+      }
     }
 
     &_price-block {
       background: #FFFFFF;
+      text-align: center;
+      padding: $s8px 0 $s20px;
+      border-left: 1px solid $colorGreyLight;
+      border-right: 1px solid $colorGreyLight;
+
+      &_text {
+        text-align: center;
+        margin-bottom: 0;
+        font-size: $s18px;
+        line-height: $s24px;
+      }
+    }
+
+    .blog-page__tabs {
+      margin: 0 auto;
+    }
+
+    &_item {
+      background: #FFFFFF;
+      border-left: 1px solid $colorGreyLight;
+      border-right: 1px solid $colorGreyLight;
+
+      &_title {
+        padding: $s40px $s24px $s20px;
+        margin: 0;
+        border-bottom: 1px solid $colorBlue;
+        font-size: $s18px;
+        line-height: $s24px;
+
+        &-line {
+          padding: 0 $s8px;
+        }
+
+        &-subtitle {
+          font-size: $s14px;
+          line-height: $s18px;
+        }
+      }
+
+      &_row {
+
+        &:nth-child(odd) {
+          background: $colorBg;
+        }
+      }
+
+      &_element {
+        padding: $s20px $s24px;
+        margin: 0;
+        font-size: $s14px;
+        line-height: $s18px;
+        display: flex;
+        align-items: center;
+
+        &:not(:first-child) {
+          justify-content: center;
+        }
+      }
+
+      &_circle {
+        border-radius: 50%;
+        width: $s24px;
+        height: $s24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-check {
+          background: rgba(242, 244, 255, 0.96);
+        }
+      }
+    }
+
+    &_buttons {
+      background: #FFFFFF;
+      border: 1px solid $colorGreyLight;
+      border-top: none;
+      border-radius: 0 0 $s32px $s32px;
+
+      button {
+        padding: $s16px $s24px;
+        width: $s200px;
+      }
     }
   }  
 }
