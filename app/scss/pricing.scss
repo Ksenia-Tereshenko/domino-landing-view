@@ -230,7 +230,7 @@
       border-radius: $s32px $s32px 0 0;
       background: #FFFFFF;
       text-align: center;
-      padding: $s16px;
+      padding: $s12px;
       font-size: $s24px;
       line-height: $s32px;
 
@@ -287,6 +287,10 @@
         &:nth-child(odd) {
           background: $colorBg;
         }
+
+        &:nth-child(even):last-child {
+          border-bottom: 1px solid rgba(242, 244, 255, 0.96);
+        }
       }
 
       &_element {
@@ -312,6 +316,11 @@
 
         &-check {
           background: rgba(242, 244, 255, 0.96);
+
+          img {
+            width: $s24px;
+            height: $s24px;
+          }
         }
       }
     }
