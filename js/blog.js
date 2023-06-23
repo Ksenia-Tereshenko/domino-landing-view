@@ -11,7 +11,7 @@ $(document).ready(function () {
 
       console.log(activeTab);
   if(!$this.hasClass(tabBtnActive)) {
-    tabBtn.removeClass(tabBtnActive);
+    $this.closest(".blog-page__tabs").find("." + tabBtnActive).removeClass(tabBtnActive);
     $this.addClass(tabBtnActive);
     tabBlock.removeClass(tabBlockActive);
     $("#" + activeTab).addClass(tabBlockActive);

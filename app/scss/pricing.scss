@@ -257,7 +257,8 @@
     }
 
     .blog-page__tabs {
-      margin: 0 auto;
+      margin: 0;
+      margin-left: $s24px;
     }
 
     &_item {

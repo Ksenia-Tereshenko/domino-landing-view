@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/blog.css">
   <link rel="stylesheet" href="css/blog_mobile.css">
   <link rel="stylesheet" href="css/pricing.css">
+  <link rel="stylesheet" href="css/pricing_mobile.css">
   <link rel="stylesheet" href="css/animate-svg.css">
 
   <meta name="msapplication-TileColor" content="#da532c">
@@ -32,6 +33,23 @@
       <button class="blog-page__tab blog-page__tab_active" data-tab="monthly">Monthly</button>
       <button class="blog-page__tab" data-tab="yearly">Yearly</button>
       <div class="price-page__tabs_discount">25% OFF</div>
+    </div>
+    <div class="price-page__tabs-block_discount_mobile">
+      <p class="price-page__tabs-block_discount_mobile-text">Get -20% Off with an annual subscription</p>
+      <div class="price-page__tabs-block_discount_mobile-tabs">
+        <button class="price-page__tabs-block_discount_mobile-item button button__outline">
+          Sandbox
+        </button>
+        <button class="price-page__tabs-block_discount_mobile-item price-page__tabs-block_discount_mobile-item_active button button__outline">
+          Starter
+        </button>
+        <button class="price-page__tabs-block_discount_mobile-item button button__outline">
+          Pro
+        </button>
+        <button class="price-page__tabs-block_discount_mobile-item button button__outline">
+          Business
+        </button>
+      </div>
     </div>
     <div class="price-page__tabs-block" id="monthly">
       <div class="price-page__tab">
@@ -895,6 +913,7 @@
             <div class="blog-page__tabs">
               <button class="blog-page__tab blog-page__tab_active" data-tab="monthly">Monthly</button>
               <button class="blog-page__tab" data-tab="yearly">Yearly</button>
+              <div class="price-page__tabs_discount">25% OFF</div>
             </div>
           </div>
           <p class="price-page__table_price-block_text">Free Forever</p>
@@ -1106,7 +1125,7 @@
             </div>            
           </div>          
         </div>
-        <div class="price-page__table_buttons price-page__table_grid">
+        <div class="price-page__table_buttons price-page__table_grid" style="display: none;">
           <div></div>
           <div class="price-page__table_item_element">
             <button class="button button__outline">
