@@ -194,6 +194,25 @@
       display: none;
     }
 
+    &__table_item_row {
+      background: #FFFFFF !important;
+      border-bottom: 1px solid #F2F4FF;
+    }
+
+    &__table_item_title {
+      font-size: $mob16px;
+      line-height: $mob20px;
+      text-align: center;
+      font-weight: 600;
+      padding: $mob32px $mob16px $mob16px;
+
+      &-subtitle {
+        font-size: $mob14px;
+        line-height: $mob6px;
+        font-weight: 400;
+      }
+    }
+
     &__table_item_circle {
       width: $mob24px;
       height: $mob24px;
@@ -206,6 +225,28 @@
 
     &__table_item_element {
       padding: 0 $mob8px $mob8px;
+    }
+
+    &__table_buttons {
+      gap: $mob16px;
+      padding: $mob32px $mob16px;
+
+      .price-page__table_item_element {
+        padding-bottom: 0;
+        
+        &:first-child, &:nth-child(2), &:nth-child(4) {
+          display: none;
+        }
+
+        &:nth-child(3), &:nth-child(5) {
+          grid-column: span 5;
+        }
+
+        button {
+          width: $mob260px;
+          padding: $mob16px $mob24px;
+        }
+      }
     }
   }
 }
