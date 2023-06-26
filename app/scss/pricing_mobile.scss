@@ -28,6 +28,8 @@
       flex-direction: column;
       gap: $mob32px;
       align-items: center;
+      position: relative;
+      z-index: 2;
 
       &-text {
         margin: $mob8px 0 0;
@@ -49,6 +51,7 @@
         min-width: initial;
         width: $mob84px;
         border-radius: $mob10px;
+        background: #FFFFFF;
 
         &_active {
           background: $colorPurple;
@@ -66,6 +69,8 @@
       display: none;
       padding: $mob24px;
       border-radius: $mob32px;
+      position: relative;
+      z-index: 2;
 
       &_header {
         gap: $mob16px;
@@ -140,6 +145,52 @@
 
     &__tab {
       grid-template-columns: 1fr;
+      z-index: 2;
+      position: relative;
+
+      &-popular {
+        margin-bottom: $mob4px;
+        gap: 0;
+        z-index: 2;
+        position: relative;
+
+        p {
+          font-size: $mob14px;
+          line-height: $mob16px;
+        }  
+      }
+
+      &__ellipse-wrp {
+        position: absolute; 
+        overflow: hidden;       
+        width: 100vw;
+        height: 100%;
+        top: -$s90px;
+        left: -$mob16px;
+        padding-top: $s90px;
+      }
+
+      &__blue-ellipse {
+        width: $mob204px;
+        height: $mob168px;
+        filter: blur($mob100px);
+        top: $mob96px;
+        right: -$mob78px;
+      }
+  
+      &__purple-ellipse {
+        width: $mob204px;
+        height: $mob168px;
+        filter: blur($mob100px);
+        top: $mob204px;
+        left: 0;
+      }
+
+      &_item_active {
+        background: #FFFFFF;
+        color: $colorBlack;
+        border-color: #E4E7EF !important;
+      }
     }
 
     &__table {
@@ -151,6 +202,20 @@
 
     &__table-block {
       padding-top: $mob80px;
+
+      &__blue-ellipse {
+        width: $mob204px;
+        height: $mob168px;
+        filter: blur($mob100px);
+        top: 0;
+        right: 0;
+      }
+
+      &__purple-ellipse {
+        width: $mob204px;
+        height: $mob168px;
+        filter: blur($mob204px);
+      }
     }
 
     &__table_header {

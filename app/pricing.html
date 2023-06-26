@@ -37,23 +37,33 @@
     <div class="price-page__tabs-block_discount_mobile">
       <p class="price-page__tabs-block_discount_mobile-text">Get -20% Off with an annual subscription</p>
       <div class="price-page__tabs-block_discount_mobile-tabs">
-        <button class="price-page__tabs-block_discount_mobile-item button button__outline">
+        <button class="price-page__tabs-block_discount_mobile-item button button__outline" data-tab="sandbox">
           Sandbox
         </button>
-        <button class="price-page__tabs-block_discount_mobile-item price-page__tabs-block_discount_mobile-item_active button button__outline">
+        <button class="price-page__tabs-block_discount_mobile-item price-page__tabs-block_discount_mobile-item_active button button__outline" data-tab="starter">
           Starter
         </button>
-        <button class="price-page__tabs-block_discount_mobile-item button button__outline">
+        <button class="price-page__tabs-block_discount_mobile-item button button__outline" data-tab="pro">
           Pro
         </button>
-        <button class="price-page__tabs-block_discount_mobile-item button button__outline">
+        <button class="price-page__tabs-block_discount_mobile-item button button__outline" data-tab="business">
           Business
         </button>
       </div>
     </div>
     <div class="price-page__tabs-block" id="monthly">
-      <div class="price-page__tab">
-        <div class="price-page__tab_item">
+      <div class="price-page__tab price-page__tab-popular">
+        <p></p>
+        <p>Most popular</p>
+        <p></p>
+        <p></p>
+      </div>
+      <div class="price-page__tab__ellipse-wrp">
+        <div class="price-page__tab__blue-ellipse"></div>
+        <div class="price-page__tab__purple-ellipse"></div>
+      </div>
+      <div class="price-page__tab">        
+        <div class="price-page__tab_item" id="sandbox">
           <div>
             <div class="price-page__tab_item_header">
               <svg class="price-page__tab_item_header-icon" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
@@ -221,7 +231,7 @@
             Sign Up, It`s Free
           </button>
         </div>
-        <div class="price-page__tab_item price-page__tab_item_active">
+        <div class="price-page__tab_item price-page__tab_item_active" id="starter">
           <div>
             <div class="price-page__tab_item_header">
               <svg class="price-page__tab_item_header-icon" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
@@ -527,7 +537,7 @@
             Sign Up, It`s Free
           </button>
         </div>
-        <div class="price-page__tab_item">
+        <div class="price-page__tab_item" id="pro">
           <div>
             <div class="price-page__tab_item_header">
               <svg class="price-page__tab_item_header-icon" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
@@ -670,7 +680,7 @@
             Sign Up, It`s Free
           </button>
         </div>
-        <div class="price-page__tab_item">
+        <div class="price-page__tab_item" id="business">
           <div>
             <div class="price-page__tab_item_header">
               <svg class="price-page__tab_item_header-icon" xmlns="http://www.w3.org/2000/svg" width="121" height="120" viewBox="0 0 121 120" fill="none">
@@ -895,6 +905,8 @@
       </div>
     </div>
     <div class="price-page__table-block">
+      <div class="price-page__table-block__blue-ellipse"></div>
+      <div class="price-page__table-block__purple-ellipse"></div>
       <h2 class="home-section__title home-section__title_center">Compare plans</h2>
       <div class="price-page__table">
         <div class="price-page__table_header_sticky">
@@ -1157,4 +1169,5 @@
 <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/blog.js"></script>
+<script type="text/javascript" src="js/price.js"></script>
 </html>
