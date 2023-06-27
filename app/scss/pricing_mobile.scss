@@ -61,8 +61,8 @@
     }
 
     &__tabs-block {
-      margin-top: $mob24px;
-      padding: 0 $mob16px;
+      margin-top: $mob12px;
+      padding: 0 $mob12px;
     }
 
     &__tab_item {
@@ -145,19 +145,14 @@
 
     &__tab {
       grid-template-columns: 1fr;
-      z-index: 2;
-      position: relative;
 
       &-popular {
         margin-bottom: $mob4px;
         gap: 0;
         z-index: 2;
-        position: relative;
-
-        p {
-          font-size: $mob14px;
-          line-height: $mob16px;
-        }  
+        font-size: $mob14px;
+        line-height: $mob16px; 
+        top: -$mob4px;
       }
 
       &__ellipse-wrp {
@@ -184,6 +179,10 @@
         filter: blur($mob100px);
         top: $mob204px;
         left: 0;
+      }
+
+      &_item {
+        margin-top: $mob22px;
       }
 
       &_item_active {

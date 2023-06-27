@@ -47,10 +47,13 @@
       text-align: center;
       text-transform: uppercase;
       font-size: $s14px;
-
-      p{
-        margin: 0;
-      }
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      color: $colorBlack;
+      display: block;
+      transform: translateY(-100%);
     }
 
     &__blue-ellipse {
@@ -81,6 +84,8 @@
       flex-direction: column;
       justify-content: space-between;
       border: 1px solid $colorGreyLight;
+      margin-top: $s22px;
+      position: relative;
 
       &_active {
         background: $colorPurple;

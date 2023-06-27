@@ -177,7 +177,30 @@
 }
 
 .price-page__tab_item:nth-child(3):hover .price-page__star-icon {
-  transform: scale(1.08) translate(-3px, -1px);
+  transform: scale(1.09) translate(-2px, -1px);
+}
+
+.price-page__tab_item:nth-child(4):hover .price-page__tab_item_business-one {
+  animation: scale-graph 2s infinite linear;
+  transition: ease-out;
+  animation-delay: 1s;
+}
+
+.price-page__tab_item:nth-child(4):hover .price-page__tab_item_business-many {
+  animation: scale-graph 2s infinite linear;  
+}
+
+@keyframes scale-graph {
+  from {
+    transform: scale(1) translate(0, 0);
+
+  }
+  50% {
+    transform: scale(1.2) translate(-4px, -5px);
+  }
+  to {
+    transform: scale(1) translate(0, 0);
+  }
 }
 
 @keyframes gear-rotate {
